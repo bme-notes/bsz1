@@ -1,0 +1,90 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{framed}
+\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
+\newcommand{\Und}[1]{\underline{#1}}
+\definecolor{shadecolor}{gray}{0.9}
+%opening 
+\title{Bevezetés a Számításelméletbe 1.\\{\large 2. tétel}}
+\author{Hegyi Zsolt}
+\begin{document}
+\maketitle{}
+\begin{shaded}
+\Rn{n} Definíció: $n \geq 1$ esetén az n db. valós számból álló számoszlopok halmazát \Rn{n} jelöli. Ezen értelmezett összeadás "+" és tetszőleges $\lambda \in \R$ "$\cdot$" skalárszorzást az alábbi alapján értelmezzük:
+$$\begin{pmatrix}
+x_1\\x_2\\\vdots\\x_n
+\end{pmatrix} + \begin{pmatrix}
+y_1\\y_2\\\vdots\\y_n
+\end{pmatrix} = \begin{pmatrix}
+x_1+y_1\\x_2+y_2\\\vdots\\x_n+y_n
+\end{pmatrix}\quad \acute{e}s\quad \lambda\cdot \begin{pmatrix}
+x_1\\x_2\\\vdots\\x_n
+\end{pmatrix} = \begin{pmatrix}
+\lambda x_1\\\lambda x_2\\\vdots\\\lambda x_n
+\end{pmatrix}
+$$
+\end{shaded}
+\begin{framed}
+\Rn{n} TULAJDONSÁGOK Tétel: Legyen $\Und{u}, \Und{v}, \Und{w} \in$ \Rn{n} és $\lambda,\:\mu\in\R$, ekkor igazak az alábbiak:\\
+Összeadás \textit{asszociatív, kommutatív}.\\
+Szorzás \textit{asszociatív, kommutatív} és \textit{disztributív}.
+\end{framed}
+\begin{leftbar}
+Biz: Triviális.
+\end{leftbar}
+\begin{shaded}
+\Rn{n} ALTERE Definíció: Legyen $V \subseteq$ \Rn{n} $\neq \varnothing$ az \Rn{n} tér egy nemüres részhalmaza. V-t az \Rn{n} alterének nevezzük, ha az alábbi két feltétel teljesül:\\
+Bármely $\Und{u},\Und{v} \in V$ esetén $\Und{u}+\Und{v} \in V$ is igaz, és\\
+Bármely $\Und{u} \in V, \lambda \in \R$ esetén $\lambda\cdot\Und{u} \in V$ is igaz.\\
+Jelölés: V $\leq$ \Rn{n}.
+\end{shaded}
+\begin{shaded}
+LINEÁRIS KOMBINÁCIÓ Definíció: Legyenek $\Und{v}_1,\ldots,\Und{v}_k \in$ \Rn{n} vektorok és $\lambda_1,\ldots,\lambda_k \in \R$ skalárok. Ekkor $\lambda_1\Und{v}_1 + \ldots + \lambda_k\Und{v}_k$ vektort a $\Und{v}_1,\ldots,\Und{v}_k$ vektorok $\lambda_1,\ldots,\lambda_k$ skalárokkal vett lineáris kombinációjának nevezzük.
+\end{shaded}
+\begin{shaded}
+GENERÁLT ALTÉR Definíció: Legyenek $\Und{v}_1,\ldots,\Und{v}_k \in$ \Rn{n} vektorok, ezekenek a lineáris kombinációval kifejezhető \Rn{n}-beli vektorok halmazát $\Und{v}_1,\ldots,\Und{v}_k$ generált alterének nevezzük.\\
+Jelölés: $\langle\Und{v}_1,\ldots,\Und{v}_k\rangle$
+\end{shaded}
+\begin{shaded}
+GENERÁTORRENDSZER Definíció: Legyenek $\Und{v}_1,\ldots,\Und{v}_k \in$ \Rn{n} vektorok, ha W $=\langle\Und{v}_1,\ldots,\Und{v}_k\rangle$, akkor a $\Und{v}_1,\ldots,\Und{v}_k$ vektorhalmazt a W altér generátorrendszerének nevezzük.
+\end{shaded}
+\begin{shaded}
+LINEÁRIS FÜGGETLENSÉG Definíció: A $\Und{v}_1,\ldots,\Und{v}_k \in$ \Rn{n} vektorrendszert akkor nevezzük lineárisan függetlennek, ha $\Und{v}_1,\ldots,\Und{v}_k$ vektorok közül semelyik sem fejezhető ki a többi lineáris kombinációjaként. Ha ez nem teljesül -- vagyis a $\Und{v}_1,\ldots,\Und{v}_k$ vektorok között legalább egy olyan, ami kifejezhető a többi lineáris kombinációjaként, akkor a $\Und{v}_1,\ldots,\Und{v}_k$ vektorrendszert lineárisan összefüggőnek nevezzük.
+\end{shaded}
+\begin{framed}
+LINEÁRIS FÜGGETLENSÉG Tétel: A $\Und{v}_1,\ldots,\Und{v}_k \in$ \Rn{n} vektorrendszer akkor és csak akkor lineárisan független, ha $\lambda_1\Und{v}_1,\ldots,\lambda_k\Und{v}_k = \Und{0}$ egyenlőség kizárólag abban az esetben teljesül, ha $\lambda_1 = \ldots = \lambda_k = 0$ -- ezt nevezzük a triviális lineáris kombinációnak.
+\end{framed}
+\begin{leftbar}
+Biz: "akkor":\\
+T.f.h. $\lambda_1\Und{v}_1,\ldots,\lambda_k\Und{v}_k = \Und{0}$ csak a triviális lin. kombináció esetén teljesül, belátjuk, hogy $\Und{v}_1,\ldots,\Und{v}_k$ lin.flen. INDIREKT bizonyítjuk: feltesszük, hogy ez mégsem lin.flen. Ha $\Und{v}_1,\ldots,\Und{v}_k$ nem lin. flen., akkor valamelyikük kifejezhető a többi lineáris kombinációjából: legyen ez pl. $\Und{v}_1$. Ekkor $$\Und{v}_1 = \alpha_2\Und{v}_2 + \ldots + \alpha_k\Und{v}_k\quad \alpha_1,\ldots,\alpha_k \in \R$$
+Átrendezve: $$1\Und{v}_1-\alpha_2\Und{v}_2 - \ldots - \alpha_k\Und{v}_k = \Und{0}$$
+Ezzel ellentmondásra jutottunk: Az fentebbi egyenlet nemtriviális lin. kombináció esetén is teljesül \\($\lambda_1 = 1,\: \lambda_2 = -\alpha_2,\ldots, \lambda_k = -\alpha_k$), tehát ezt az állítást igazoltuk.\\\\
+A "csak akkor" állítás: feltesszük, hogy  $\Und{v}_1,\ldots,\Und{v}_k$ lin.flen. és megmutatjuk, hogy ekkor  $\lambda_1\Und{v}_1,\ldots,\lambda_k\Und{v}_k = \Und{0}$ csak a $\lambda_1 = \ldots = \lambda_k = 0$ esetben teljesül. INDIREKT bizonyítjuk: T.f.h. $\lambda_1\Und{v}_1,\ldots,\lambda_k\Und{v}_k = \Und{0}$ de a lambdák között van nemnulla, pl: $\lambda_1 \neq 0$. Ekkor átrendezés és $\lambda_1 \neq 0$-val való osztás után a következő alakot kapjuk:
+$$\Und{v}_1 = -\frac{\lambda_2}{\lambda_1}\Und{v}_2-\ldots-\frac{\lambda_k}{\lambda_1}\Und{v}_k$$
+Ezzel ellentmondásra jutottunk, $\Und{v}_1,\ldots,\Und{v}_k$ mégsem lin.flen., mert $\Und{v}_1$ kifejezhető a többiből lin. kombinációval.
+\end{leftbar}
+\begin{framed}
+ÚJONNAL ÉRKEZŐ VEKTOR LEMMÁJA Lemma: T.f.h. az $f_1,\ldots,f_k$ rendszer lin.flen., de $f_1,\ldots,f_k,f_{k+1}$ lin.öf. Ekkor $f_{k+1} \in \langle f_1,\ldots,f_k \rangle$, tehát $f_{k+1}$ kifejezhető $f_1,\ldots,f_k$ lin. kombinációjaként.
+\end{framed}
+\begin{leftbar}
+Biz: Mivel $f_1,\ldots,f_k,f_{k+1}$ lin.öf., ezért a lin.flen. tétele alapján létezik nemtriviális lin. kombináció, mely a nullvektort adja végeredményül. Ha a
+$\lambda_1f_1+\ldots+\lambda_kf_k,\lambda_{k+1} = \Und{0}$  egyenletben $\lambda_{k+1} = 0$, az azt jelenti, hogy a maradék egyenlet így néz ki $\lambda_1f_1+\ldots+\lambda_kf_k = \Und{0}$ ÉS a $\lambda_1,\ldots,\lambda_k$ skalárok között van egy (vagy több) nemnulla tag. Ez az állítás viszont azt eredményezné, hogy az eredeti $f_1,\ldots,f_k$ rendszer lin.öf., ezzel ellentmondásra jutottunk. Ebből következtetve $\lambda_{k+1} \neq 0$, és az ezzel való osztás után kapott egyenletből az következik, hogy $f_{k+1}$ előállítható az $f_1,\ldots,f_k$ rendszer lineáris kombinációjaként, tehát $f_{k+1} \in \langle f_1,\ldots,f_k \rangle$.
+\end{leftbar}
+\begin{framed}
+F-G EGYENLŐTLENSÉG Tétel: Legyen V $\leq$ \Rn{n} altér, $\Und{f}_1,\ldots,\Und{f}_k$ V-beli vektorokból álló lineárisan független rendszer, $\Und{g}_1,\ldots,\Und{g}_m$ pedig genenátorrendszer V-ben, ekkor $k \leq m$.
+\end{framed}
+\begin{leftbar}
+Biz: TELJES INDUKCIÓVAL:\\
+Ha k = 1, akkor V-ben van a nullvektortól különb vektor (mert $\Und{f}_{1} \neq 0$), így minden gen.rszr.-e legalább 1 elemű (üres halmaz \{\Und{0}\} alteret generálja csak). Tétel k = 1 esetén igaz. Továbbiakban t.f.h. $k \geq 2$ és a tétel ($k - 1$)-re már igaz, cél belátni, hogy k-ra is igaz a tétel.\\
+Mivel $\Und{g}_1,\ldots,\Und{g}_m$ gen.rszr. V-ben, ezért minden V-beli vektor, így $f_k$ is előáll ennek a lin. kombinációjaként: $f_k = \lambda_1\Und{g}_1 + \ldots + \lambda_m\Und{g}_m$. A lambdák között kell legyen nemnulla (mert $f_k \neq 0$). Legyen pl. $\lambda_m \neq 0$ és legyen $W = \langle \Und{g}_1, \ldots, \Und{g}_{m-1} \rangle$. Megmutatjuk, hogy minden $1 \leq j \leq k-1$ esetén az $\Und{f}_j$-hez található olyan $\alpha_j$ skalár, hogy $\Und{f}_j + \alpha_j\Und{f}_k \in W$. Ugyanis $\Und{f}_j$ felírható $\Und{g}_1,\ldots,\Und{g}_m$ lin. kombinációjaként: $\Und{f}_j = \beta_1\Und{g}_1+\ldots+\beta_m\Und{g}_m$. Ekkor $\alpha_j = -\frac{\beta_m}{\lambda_m}$ megfelel a célnak. A bizonyítás további része megtalálható a hivatalos, Szeszlér-féle BSz1 jegyzet 23. oldalán, mivel az író megunta ennek a nagyon unalmas bizonyításnak a leírását.
+\end{leftbar}
+\end{document}

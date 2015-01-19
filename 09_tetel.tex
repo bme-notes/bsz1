@@ -1,0 +1,50 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{framed}
+\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
+\newcommand{\Und}[1]{\underline{#1}}
+\definecolor{shadecolor}{gray}{0.9}
+%opening 
+\title{Bevezetés a Számításelméletbe 1.\\{\large 9. tétel}}
+\author{Hegyi Zsolt}
+\begin{document}
+\maketitle{}
+\begin{shaded}
+LINEÁRIS LEKÉPEZÉS Definíció: Az $f$: \Rn{n} $\rightarrow$ \Rn{k} függvényt lineáris leképezésnek hívjuk, ha létezik egy olyan ($k \times n$)-es mátrix, melyre $f(\Und{x}) = A \cdot \Und{x}$ teljesül minden $\Und{x} \in$ \Rn{n} esetén. Az n = k esetben f-et lineáris transzformációnak is nevezzük. Ha $f\::\:$\Rn{n} $\rightarrow$ \Rn{k} lineáris leképezés és $f(\Und{x}) = A \cdot \Und{x}$ minden $\Und{x} \in$ \Rn{n}-re, akkor azt mondjuk, hogy a mátrixa A.\\
+Jelölés: $A = [f]$.
+\end{shaded}
+\begin{framed}
+LINEÁRIS LEKÉPEZÉS FELTÉTELE Tétel: Az $f$: \Rn{n} $\rightarrow$ \Rn{k} függvény akkor és csak akkor lineáris leképezés, ha:
+\begin{itemize}
+\item $f(\Und{x} + \Und{y}) = f(\Und{x}) + f(\Und{y})$ igaz minden $x,y \in$ \Rn{n} esetén;
+\item $f(\lambda \cdot \Und{x}) = \lambda \cdot f(\Und{x})$ igaz minden $x \in$ \Rn{n} és $\lambda \in \R$ esetén.
+\end{itemize}
+Ha pedig f teljesíti ezt a két tulajdonságot, akkor az $[f]$ egyértelmű és azonos azzal a ($k \times n$)-es mátrixszal, melynek minden $1 \leq i \leq n$ esetén az i-edik oszlopa $f(\Und{e}_i)$.
+\end{framed}
+\begin{leftbar}
+Biz: 92. oldal Szeszlér-jegyzet.
+\end{leftbar}
+\begin{framed}
+LINEÁRIS LEKÉPEZÉSEK SZORZATA Tétel: Legyenek $f$: \Rn{n} $\rightarrow$ \Rn{k} és $g$: \Rn{n} $\rightarrow$ \Rn{k} lineáris leképezések. Ekkor ezeknek a $g \circ f$ szorzata is lineáris leképezés, melyre $[g \circ f] = [g] \cdot [f]$.
+\end{framed}
+\begin{leftbar}
+Biz: 94. oldal Szeszlér-jegyzet.
+\end{leftbar}
+\begin{framed}
+ADDÍCIÓS TÉTELEK Tétel: Tetszőleges $\alpha$ és $\beta$ szögekre teljesülnek alábbi összefüggések:
+$$\sin(\alpha + \beta) = \sin\alpha\cdot\cos\beta + \cos\alpha\cdot\sin\beta$$
+$$\cos(\alpha + \beta) = \cos\alpha\cdot\cos\beta - \sin\alpha\cdot\sin\beta$$
+\end{framed}
+\begin{leftbar}
+Biz: 95. oldal Szeszlér-jegyzet.
+\end{leftbar}
+\end{document}

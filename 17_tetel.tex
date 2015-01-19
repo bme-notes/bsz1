@@ -1,0 +1,88 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{framed}
+\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
+\newcommand{\Und}[1]{\underline{#1}}
+\definecolor{shadecolor}{gray}{0.9}
+%opening 
+\title{Bevezetés a Számításelméletbe 1.\\{\large 17. tétel}}
+\author{Hegyi Zsolt}
+\begin{document}
+\maketitle{}
+\begin{shaded}
+NEM KELL - SEGÉDDEFINÍCIÓK: Legyenek A és B tetszőleges halmazok és $f$ : A $\to$ B egy függvény. Az $f$ függvényt
+\begin{itemize}
+\item injektívnek nevezzük, ha bármely $x_1, x_2 \in A, x_1 \neq x_2$ esetén $f(x_1) \neq f(x_2)$.
+\item szürjektívnek nevezzük, ha bármely $y \in B$ esetén létezik olyan $x \in A$, melyre $f(x) = y$.
+\item bijektívnek nevezzük, ha injektív és szürjektív.
+\end{itemize}
+\end{shaded}
+\begin{shaded}
+HALMAZOK SZÁMOSSÁGÁNAK EGYENLŐSÉGE Definíció: Azt mondjuk, hogy a (tetszőleges) A és B halmazok számossága egyenlő, ha létezik egy $f$ : A $\to$ B bijekció.\\
+Jelölés: |A| = |B|
+\end{shaded}
+\begin{shaded}
+$\mathbb{N}$ SZÁMOSSÁGA: Az A halmazt megszámlálhatóan végtelennek nevezzük, ha a számossága egyenlő a természetes számok halmazáéval (tehát |A| = |$\mathbb{N}$|).\\
+Jelölés: |A| = $\aleph_0$
+\end{shaded}
+\begin{framed}
+$\mathbb{Q}$, $\mathbb{Z}$ SZÁMOSSÁGA Tétel: Az egész számok $\mathbb{Z}$ halmaza és a racionális számok $\mathbb{Q}$ halmaza egyaránt megszámlálhatóan végtelen.
+\end{framed}
+\begin{leftbar}
+Biz: 161. oldal Szeszlér-jegyzet
+\end{leftbar}
+\begin{framed}
+CANTOR Tétel: A valós számok $\mathbb{R}$ halmaza nem megszámlálhatóan végtelen, vagyis $$|\mathbb{N}| \neq |\mathbb{R}|$$
+\end{framed}
+\begin{leftbar}
+Biz: 162-164. oldal Szeszlér-jegyzet.
+\end{leftbar}
+\begin{shaded}
+$\mathbb{R}$ SZÁMOSSÁGA Definíció: Az A halmazt kontinuum számosságúnak nevezzük, ha a számossága egyenlő a valós számok halmazáéval (vagyis |A| = |$\mathbb{R}$|).\\
+Jelölés: |A| = c.
+\end{shaded}
+A (0,1) nyílt intervallum is kontinuum számosságú. Ld. 163. oldal Szeszlér-jegyzet.
+\begin{shaded}
+Legyenek A és B (tetszőleges) halmazok.
+\begin{itemize}
+\item Azt mondjuk, hogy A számossága kisebb vagy egyenlő B számoságánál, ha létezik $f\::\:A \to B$ injektív függvény.\\
+Jelölés: $|A| \leq |B|$
+\item Azt mondjuk, hogy A számossága kisebb B számosságánál, ha $|A| \leq |B|$, de $|A| \neq |B|$.\\
+Jelölés: $|A| < |B|$
+\end{itemize}
+\end{shaded}
+\begin{framed}
+CANTOR-BERNSTEIN Tétel: Az A és B halmazokra |A| = |B| akkor és csak akkor igaz, ha $|A| \leq |B|$ és $|B| \leq |A|$
+\end{framed}
+\begin{framed}
+$\mathbb{Q}$ SZÁMOSSÁGA Tétel: $|\mathbb{Q}| = |\mathbb{N}|$
+\end{framed}
+\begin{leftbar}
+Biz: 167. oldal Szeszlér-jegyzet.
+\end{leftbar}
+\begin{shaded}
+HATVÁNYHALMAZ Definíció: Tetszőleges A halmaz hatványhalmazának nevezzük az A összes részhalmaza által alkotott halmazt.\\
+Jelölés: P(A)
+\end{shaded}
+\begin{framed}
+(ismét?) CANTOR-Tétel: Minden A halmazra |A| < |P(A)|.
+\end{framed}
+\begin{leftbar}
+Biz: 169. oldal Szeszlér-jegyzet.
+\end{leftbar}
+\begin{framed}
+$\mathbb{N}$ HATVÁNYHALMAZÁNAK SZÁMOSSÁGA Tétel: |P($\mathbb{N}$)| = |$\mathbb{R}$|
+\end{framed}
+\begin{leftbar}
+Biz: 170-171. oldal Szeszlér-jegyzet.
+\end{leftbar}
+\end{document}

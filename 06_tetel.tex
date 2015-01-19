@@ -1,0 +1,47 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{framed}
+\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
+\newcommand{\Und}[1]{\underline{#1}}
+\definecolor{shadecolor}{gray}{0.9}
+%opening 
+\title{Bevezetés a Számításelméletbe 1.\\{\large 6. tétel}}
+\author{Hegyi Zsolt}
+\begin{document}
+\maketitle{}
+\begin{framed}
+KIFEJTÉSI Tétel: Ha az ($n \times n$)-es A mátrix valamelyik sorának, vagy oszlopának minden elemét megszorozzuk a hozzá tartozó előjeles aldetermináns értékével és a kapott n darab kéttényezős szorzatot összeadjuk, akkor az A determinánsának értékét kapjuk.
+\end{framed}
+\begin{leftbar}
+Biz: A Szeszlér-jegyzet 55-58. oldalán.
+\end{leftbar}
+\begin{shaded}
+MÁTRIX Definíció: Adott $k,n\geq1$ egészek esetén ($k\times n$)-es mátrixnak nevezünk egy k sorból és n oszlopból álló táblázatot, melynek minden cellájában egy valós szám áll. A ($k\times n$)-es mátrixok halmazát \Rn{k\times n} jelöli. Az A mátrix i-edik sorának és j-edik oszlopának kereszteződésében álló elemet $a_{i,j}$ jelöli. Az \Rn{k\times n}-en értelmezett, "+"-al jelölt összeadást és tetszőleges $\lambda \in \R$ esetén "$\cdot$"-tal jelölt skalárral való szorzást tudjuk értelmezni. Nem, nem fogom leírni, hogyan néz ki egy szorzás/összeadás $k \times n$-es mátrixon.
+\end{shaded}
+\begin{framed}
+MÁTRIXMŰVELETEK Tétel: Legyen A,B,C $\in$ \Rn{k\times n} és $\lambda, \mu \in \R$. Ekkor igazak az alábbiak:\\
+A mátrixösszeadás asszociatív és kommutatív.\\
+A mátrixszorzás asszociatív és disztributív. (NEM KOMMUTATÍV)!
+\end{framed}
+\begin{shaded}
+TRANSZPONÁLT Definíció: A ($k\times n$)-es A mátrix transzponáltjának nevezzük az ($n\times k$)-as B mátrixot, ha $b_{i,j} = a_{j_i}$ teljesül minden $1 \leq i \leq n$ és $1 \leq j \leq k$ esetén.\\
+Jelölés: $B = A^T$
+\end{shaded}
+\begin{shaded}
+MÁTRIXSZORZÁS Definíció: A ($k\times n$)-es A ($n\times m$)-es B mátrixok szorzatának nevezzük és $A\cdot B$-vel jelöljól azt a ($k\times m$)-es C mátrixot, melyre minden $1 \leq i \leq k$ és $1 \leq j \leq m$ esetén
+$$c_{i,j} = a_{i,1}\cdot b_{1, j}+\ldots+a_{i,n}\cdot b_{n,j}$$
+\end{shaded}
+Ha az A és B mátrixokra $A \cdot B$ szorzat létezik, akkor $B^T \cdot A^T$ is létezik és $(A\cdot B)^T = B^T \cdot A^T$.
+\begin{framed}
+DETERMINÁNSOK SZORZÁSTÉTELE Tétel: Bármely A és B ($n\times n$)-es mátrixokra: $$det(A\cdot B)=detA \cdot detB$$
+\end{framed}
+\end{document}

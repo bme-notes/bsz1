@@ -1,0 +1,49 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{framed}
+\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
+\newcommand{\Und}[1]{\underline{#1}}
+\definecolor{shadecolor}{gray}{0.9}
+%opening 
+\title{Bevezetés a Számításelméletbe 1.\\{\large 16. tétel}}
+\author{Hegyi Zsolt}
+\begin{document}
+\maketitle{}
+\begin{shaded}
+POLINOMIÁLIS FUTÁSIDEJŰ ALGORITMUS: Definíció: (vázlatos) A algoritmust polinomiális futásidejűnek tekintjük, ha n méretű bemenethez tartozó $f$(n) függvényre, mely az algoritmus lépésszámát határozza meg, a következő MINDEN n esetén fennáll:
+$$f(n) \leq c\cdot n^k$$ ahol c és n rögzített konstansok.
+\end{shaded}
+A Szeszlér-jegyzet 137-141. oldalán található egy hosszas mese a számelméleti algoritmusokról, ezek közül az ALAPMŰVELETEK és a HATVÁNYOZÁS, valamint HATVÁNYOZÁS MODULO M a fontosak.
+\begin{framed}
+PRÍMTESZTELÉS Fermat-teszt:
+\begin{description}
+\item[Bemenet]m egész
+\item[0. lépés]k $\leftarrow$ 1
+\item[1. lépés]Generáljunk véletlen számot 1 és m-1 közt.
+\item[2. lépés]Euklideszi-algoritmussal számoljuk ki (a,m) értékét. Ha (a,m)$\neq1$, m NEM prím, STOP.
+\item[3. lépés]Számítsuk ki $a^{m-1}$ (mod m) értékét ISMÉTELT NÉGYZETRE EMELÉSEK MÓDSZERÉVEL. Ha nem 1, m NEM prím, STOP.
+\item[4. lépés]Ha k = 100, m VALÓSZÍNŰLEG prím.
+\item[5. lépés]k $\leftarrow$ k+1, vissza \textbf{1. lépés}hez
+\end{description}
+\end{framed}
+\begin{framed}
+FERMAT-TESZT ÁRULÓK SZÁMA Tétel: Ha m > 1 összetett szám és m-nek van árulója, akkor az 1 és m közötti, m-hez relatív prím számoknak legalább a fele áruló.
+\end{framed}
+\begin{leftbar}
+Biz: 147. oldal Szeszlér-jegyzet.
+\end{leftbar}
+\begin{shaded}
+Az m > 1 összetett számot univerzális álprímnek, vagy más néven Carmichael-számnak nevezzük, ha nincsen árulója, vagyis, ha minden 1 < a < m, (a,m) = 1 esetén $a^{m-1} \equiv 1$ (mod m).
+\end{shaded}
+Nyilvános kulcsú titkosítás és az RSA-algoritmus:\\
+152-154. oldal Szeszlér-jegyzet.
+\end{document}
