@@ -1,0 +1,9 @@
+*.out
+*.log
+*.aux
+*.gz
+*.pdf
+*_stripped.tex
+/pdfs/*
+makelog
+*.toc
