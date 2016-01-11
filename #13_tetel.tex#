@@ -70,7 +70,7 @@ ALAPMŰVELETEK KONGRUENCIÁKKAL Tétel: T.f.h. $a \equiv b$ (mod m) és $c \equi
 Biz: 120. oldal Szeszlér-jegyzet.
 \end{leftbar}
 \begin{framed}
-KONGRUENCIA Tétel: Legyenek a,b,c,m tetszőlegesek és $d = (c,m)$ (lnko). Ekkor $a\cdot c \equiv b\cdot c$ (mod m) akkor és csak akkor igaz, ha $a \equiv b$ (mod $\frac{m}{d})$.
+KONGRUENCIA Tétel: Legyenek a,b,c,m tetszőlegesek és $d = (c,m)$ (lnko). Ekkor $a\cdot c \equiv b\cdot d$ (mod m) akkor és csak akkor igaz, ha $a \equiv b$ (mod $\frac{m}{d})$.
 \end{framed}
 \begin{leftbar}
 Biz: 120-121. oldal Szeszlér-jegyzet.
