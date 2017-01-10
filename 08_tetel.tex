@@ -13,7 +13,7 @@
 \newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
 \newcommand{\Und}[1]{\underline{#1}}
 \definecolor{shadecolor}{gray}{0.9}
-%opening 
+%opening
 \title{Bevezetés a Számításelméletbe 1.\\{\large 8. tétel}}
 \author{Hegyi Zsolt}
 \begin{document}
@@ -60,7 +60,7 @@ Jelölés: r(A).
 RANG KISZÁMOLÁSA Tétel: Legyen A ($k \times n$)-es mátrix és az oszlopai legyenek $\Und{a}_1, \ldots, \Und{a}_n$, ekkor $r(A) = dim\langle\Und{a}_1, \ldots, \Und{a}_n\rangle$
 \end{framed}
 \begin{leftbar}
-Biz: Válasszuk ki A oszlopai közül a legtöbbet őgy, hogy ezek lin.flen.-ek legyenek. Oszloprang def. szerint ekkor $r = r(A)$. Állítjuk, hogy $\Und{a}_1, \ldots, \Und{a}_n$ bázist alkot a W = $dim\langle\Und{a}_1, \ldots, \Und{a}_n\rangle$ altérben. Be kell látnunk tehát, hogy $\Und{a}_1, \ldots, \Und{a}_n$ gen.rszr. W-ben. Legyen U = $\langle\Und{a}_1, \ldots, \Und{a}_r\rangle$, célunk belátni, hogy U = W. $r < i \leq n$ esetén $\Und{a}_1, \ldots, \Und{a}_r, \Und{a}_i$ lin.öf, mivel A-ból r+1 lin.flen. oszlopot nem lehet kiválasztani. Az újonnal érkező vektor lemmája szerint ekkor $\Und{a}_i\in\langle\Und{a}_1, \ldots, \Und{a}_r\rangle = U$, tehát $\Und{a}_1, \ldots, \Und{a}_n$ mind U-beli, és mivel U altér, ezért minden W-beli, tehát $\Und{a}_1, \ldots, \Und{a}_n$ vektorokból lin. kombinációval kifejezhető vektor is U-beli kell, hogy legyen. Ezzel $W \subseteq U$ bizonyítottuk, és a tételt is.
+Biz: Válasszuk ki A oszlopai közül a legtöbbet őgy, hogy ezek lin.flen.-ek legyenek. Oszloprang def. szerint ekkor $r = r(A)$. Állítjuk, hogy $\Und{a}_1, \ldots, \Und{a}_n$ bázist alkot a W = $dim\langle\Und{a}_1, \ldots, \Und{a}_n\rangle$ altérben. Be kell látnunk tehát, hogy $\Und{a}_1, \ldots, \Und{a}_n$ gen.rszr. W-ben. Legyen U = $\langle\Und{a}_1, \ldots, \Und{a}_r\rangle$, célunk belátni, hogy U = W. $r < i \leq n$ esetén $\Und{a}_1, \ldots, \Und{a}_r, \Und{a}_i$ lin.öf, mivel A-ból r+1 lin.flen. oszlopot nem lehet kiválasztani. Az újonnan érkező vektor lemmája szerint ekkor $\Und{a}_i\in\langle\Und{a}_1, \ldots, \Und{a}_r\rangle = U$, tehát $\Und{a}_1, \ldots, \Und{a}_n$ mind U-beli, és mivel U altér, ezért minden W-beli, tehát $\Und{a}_1, \ldots, \Und{a}_n$ vektorokból lin. kombinációval kifejezhető vektor is U-beli kell, hogy legyen. Ezzel $W \subseteq U$ bizonyítottuk, és a tételt is.
 \end{leftbar}
 \begin{framed}
 RANG KISZÁMOLÁSA Tétel: Az elemi sorekvivalens lépések a mátrix rangját nem változtatják meg. A lépcsős alakú mátrix sorainak a száma egyenló a mátrix rangjával.

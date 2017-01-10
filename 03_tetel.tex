@@ -13,7 +13,7 @@
 \newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
 \newcommand{\Und}[1]{\underline{#1}}
 \definecolor{shadecolor}{gray}{0.9}
-%opening 
+%opening
 \title{Bevezetés a Számításelméletbe 1.\\{\large 3. tétel}}
 \author{Hegyi Zsolt}
 \begin{document}
@@ -40,7 +40,7 @@ $$\lambda_1\Und{e}_1+\ldots+\lambda_n\Und{e}_n = \lambda_1\begin{pmatrix}
 1\\0\\\vdots\\0
 \end{pmatrix}+\ldots+
 \lambda_n\begin{pmatrix}
-0\\0\\\vdots\\1 
+0\\0\\\vdots\\1
 \end{pmatrix} = \begin{pmatrix}
 \lambda_1\\\lambda_2\\\vdots\\\lambda_n
 \end{pmatrix}$$
@@ -52,7 +52,7 @@ BÁZIS Tétel: A V $\leq$ \Rn{n} altérben $\Und{b}_1,\ldots,\Und{b}_k$ vektorok
 \end{framed}
 \begin{leftbar}
 Biz: "csak akkor": akkor bázis, ha gen.rszr V-ben és lin.flen. Előbbi következik tételből, utóbbi pedig 2. tételsor alternatív lin.flen. def.-jéből.\\
-"akkor": Minden $\Und{v} \in$ \Rn{n} kifejezhető $\Und{b}_1,\ldots,\Und{b}_k$ lin. kombinációjaként, INDIREKT t.f.h. valamely $\Und{v} \in$ V kétféleképpen kifejezhető: 
+"akkor": Minden $\Und{v} \in$ \Rn{n} kifejezhető $\Und{b}_1,\ldots,\Und{b}_k$ lin. kombinációjaként, INDIREKT t.f.h. valamely $\Und{v} \in$ V kétféleképpen kifejezhető:
 $$\Und{v} = \lambda_1\Und{b}_1 + \ldots + \lambda_k\Und{b}_k = \mu_1\Und{b}_1 + \ldots + \mu_k\Und{b}_k\quad \acute{e}s\quad \lambda_j \neq \mu_j$$A kettő különbségét véve:
 $$\Und{0} = (\lambda_1 - \mu_1)\Und{b}_1 +\ldots +  (\lambda_k - \mu_k)\Und{b}_k$$
 Azt kaptuk tehát, hogy a \Und{0} kifejezhető a $\Und{b}_1,\ldots,\Und{b}_k$ nemtriviális lin. kombinációjából, hiszen $(\lambda_j - \mu_j) \neq 0$, ez ellentmondás, tehát ezt az irányt is bizonyítottuk.
@@ -65,15 +65,15 @@ KOORDINÁTAVEKTOR Definíció: Legyen V $\leq$ \Rn{n}, B = \{$\Und{b}_1,\ldots,\
 \end{pmatrix}\in$ \Rn{k} vektor a \Und{v} vektor B szerinti koordinátavektora, ha $\Und{v} = \lambda_1\Und{b}_1 + \ldots + \lambda_k\Und{b}_k$.\\
 Jelölés: $\Und{k} = [\Und{v}]_B$
 \end{shaded}
-Fontos még, hogy $[\Und{v}]_B$ nem csak \Und{v}-től függ: ugyanannak a vektornak más-más bázis esetén más-más koordinátavektorok felelnek meg. 
+Fontos még, hogy $[\Und{v}]_B$ nem csak \Und{v}-től függ: ugyanannak a vektornak más-más bázis esetén más-más koordinátavektorok felelnek meg.
 \begin{framed}
 BÁZIS LÉTEZÉSE Tétel: Legyen V $\leq$ \Rn{n} altér, $f_1, \ldots, f_k$ V-beli vektorokból álló lineárisan független rendszer. Ekkor $f_1, \ldots, f_k$ kiegészíthető véges sok további vektorral úgy, hogy a kapott rendszer bázis legyen.
 \end{framed}
 \begin{leftbar}
-Biz: Leqyen W = $\langle f_1, \ldots, f_k \rangle$. Nyilván igaz, hogy W $\subseteq$ V, mivel V altér. Ha V = W, akkor $f_1, \ldots, f_k$ gen.rszr. és így bázis V-ben, tehát a tételt beláttuk. Ha W $\neq$ V, akkor létezik egy \Und{v} $\in$ V, \Und{v} $\notin$ W vektor. Újonnal érkező vektor lemmája szerint ekkor $f_1, \ldots, f_k, \Und{v}$ lin.flen. Ha ez már gen.rszr. V-ben, akkor a tételt beláttuk, ellenkező esetben ismételjük meg a lépéseket. Be kell még látnunk, hogy ez a folyamat egy idő után leáll, ekkor az F-G egyenlőtlenséget vesszük igénybe, ez alapján n-nél nagyobb elemszámú lin.flen rendszer nem létezhet \Rn{n}-ben, és létezik n elemű gen.rszr. is ebben a térben. Tehát az eljárás $n-k$ lépés után biztosan leáll.
+Biz: Leqyen W = $\langle f_1, \ldots, f_k \rangle$. Nyilván igaz, hogy W $\subseteq$ V, mivel V altér. Ha V = W, akkor $f_1, \ldots, f_k$ gen.rszr. és így bázis V-ben, tehát a tételt beláttuk. Ha W $\neq$ V, akkor létezik egy \Und{v} $\in$ V, \Und{v} $\notin$ W vektor. Újonnan érkező vektor lemmája szerint ekkor $f_1, \ldots, f_k, \Und{v}$ lin.flen. Ha ez már gen.rszr. V-ben, akkor a tételt beláttuk, ellenkező esetben ismételjük meg a lépéseket. Be kell még látnunk, hogy ez a folyamat egy idő után leáll, ekkor az F-G egyenlőtlenséget vesszük igénybe, ez alapján n-nél nagyobb elemszámú lin.flen rendszer nem létezhet \Rn{n}-ben, és létezik n elemű gen.rszr. is ebben a térben. Tehát az eljárás $n-k$ lépés után biztosan leáll.
 \end{leftbar}
 Ebből következik, hogy minden V $\leq$ \Rn{n} altérben van bázis -- tehát dim V is létezik.
 \begin{leftbar}
 Ha V = ${\Und{0}}$, akkor az üres halmaz bázis V-ben, viszont ha V tartalma egy $\Und{v} \neq \Und{0}$ vektort, akkor \Und{v}-re alkalmazva fenti tételt kapunk egy V-beli bázist.
-\end{leftbar} 
+\end{leftbar}
 \end{document}
