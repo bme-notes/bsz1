@@ -1,23 +1,5 @@
-\documentclass[]{article}
-\usepackage{lmodern}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{polyglossia}
-\usepackage{listings}
-\usepackage{tcolorbox}
-\usepackage{etoolbox}
-\usepackage{setspace}
-\usepackage{framed}
-\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
-\newcommand{\Und}[1]{\underline{#1}}
-\definecolor{shadecolor}{gray}{0.9}
-%opening 
-\title{Bevezetés a Számításelméletbe 1.\\{\large 13. tétel}}
-\author{Hegyi Zsolt}
-\begin{document}
-\maketitle{}
+\section{13. tétel}
+
 \begin{shaded}
 OSZTHATÓSÁG Definíció: Azt mondjuk, hogy az $a \in \mathbb{Z}$ egész osztója $b \in \mathbb{Z}$ egésznek, ha létezik olyan $c \in \mathbb{Z}$, melyre $a \cdot c = b$. Ugyanezt fejezzük ki, ha b-t az a többszörösének mondjuk. \\
 Jelölés: $a|b$, ha pedig a nem osztója b-nek, $a\!\not|\ b$.\\Az a valódi osztója b-nek, ha a|b fennál és $1 < |a| < |b|$.
@@ -70,9 +52,8 @@ ALAPMŰVELETEK KONGRUENCIÁKKAL Tétel: T.f.h. $a \equiv b$ (mod m) és $c \equi
 Biz: 120. oldal Szeszlér-jegyzet.
 \end{leftbar}
 \begin{framed}
-KONGRUENCIA Tétel: Legyenek a,b,c,m tetszőlegesek és $d = (c,m)$ (lnko). Ekkor $a\cdot c \equiv b\cdot d$ (mod m) akkor és csak akkor igaz, ha $a \equiv b$ (mod $\frac{m}{d})$.
+KONGRUENCIA Tétel: Legyenek a,b,c,m tetszőlegesek és $d = (c,m)$ (lnko). Ekkor $a\cdot c \equiv b\cdot c$ (mod m) akkor és csak akkor igaz, ha $a \equiv b$ (mod $\frac{m}{d})$.
 \end{framed}
 \begin{leftbar}
 Biz: 120-121. oldal Szeszlér-jegyzet.
 \end{leftbar}
-\end{document}

@@ -1,23 +1,5 @@
-\documentclass[]{article}
-\usepackage{lmodern}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{polyglossia}
-\usepackage{listings}
-\usepackage{tcolorbox}
-\usepackage{etoolbox}
-\usepackage{setspace}
-\usepackage{framed}
-\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
-\newcommand{\Und}[1]{\underline{#1}}
-\definecolor{shadecolor}{gray}{0.9}
-%opening 
-\title{Bevezetés a Számításelméletbe 1.\\{\large 12. tétel}}
-\author{Hegyi Zsolt}
-\begin{document}
-\maketitle{}
+\section{12. tétel}
+
 \begin{shaded}
 DIAGONÁLIS MÁTRIX Definíció: Az A ($n \times n$)-es mátrix akkor nevezzük diagonális mátrixnak, ha minden $i \neq j$ esetén $a_{i,j} = 0$ teljesül.
 \end{shaded}
@@ -45,4 +27,3 @@ KARAKTERISZTIKUS POLINOM Definíció: Az ($n \times n$)-es A mátrix karakterisz
 Jelölés: $k_A(\lambda)$.
 \end{shaded}
 A sajátérték definíciója átfogalmazva az előző tétel és definíció felhasználásával: A mátrix sajátértékei a $k_A(\lambda)$ karakterisztikus polinom gyökei, tehát a $k_A(\lambda) = 0$ egyenlet megoldásai. Az algebra egyik tétele szerint tehát n-edfokú polinomnak legfeljebb n gyöke lehet, amiből következik, hogy ($n \times n$)-es mátrixnak legfeljebb n sajátértéke van.
-\end{document}

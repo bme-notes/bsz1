@@ -1,23 +1,5 @@
-\documentclass[]{article}
-\usepackage{lmodern}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{polyglossia}
-\usepackage{listings}
-\usepackage{tcolorbox}
-\usepackage{etoolbox}
-\usepackage{setspace}
-\usepackage{framed}
-\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
-\newcommand{\Und}[1]{\underline{#1}}
-\definecolor{shadecolor}{gray}{0.9}
-%opening
-\title{Bevezetés a Számításelméletbe 1.\\{\large 2. tétel}}
-\author{Hegyi Zsolt}
-\begin{document}
-\maketitle{}
+\section{2. tétel}
+
 \begin{shaded}
 \Rn{n} Definíció: $n \geq 1$ esetén az n db. valós számból álló számoszlopok halmazát \Rn{n} jelöli. Ezen értelmezett összeadás "+" és tetszőleges $\lambda \in \R$ "$\cdot$" skalárszorzást az alábbi alapján értelmezzük:
 $$\begin{pmatrix}
@@ -87,4 +69,3 @@ Biz: TELJES INDUKCIÓVAL:\\
 Ha k = 1, akkor V-ben van a nullvektortól különb vektor (mert $\Und{f}_{1} \neq 0$), így minden gen.rszr.-e legalább 1 elemű (üres halmaz \{\Und{0}\} alteret generálja csak). Tétel k = 1 esetén igaz. Továbbiakban t.f.h. $k \geq 2$ és a tétel ($k - 1$)-re már igaz, cél belátni, hogy k-ra is igaz a tétel.\\
 Mivel $\Und{g}_1,\ldots,\Und{g}_m$ gen.rszr. V-ben, ezért minden V-beli vektor, így $f_k$ is előáll ennek a lin. kombinációjaként: $f_k = \lambda_1\Und{g}_1 + \ldots + \lambda_m\Und{g}_m$. A lambdák között kell legyen nemnulla (mert $f_k \neq 0$). Legyen pl. $\lambda_m \neq 0$ és legyen $W = \langle \Und{g}_1, \ldots, \Und{g}_{m-1} \rangle$. Megmutatjuk, hogy minden $1 \leq j \leq k-1$ esetén az $\Und{f}_j$-hez található olyan $\alpha_j$ skalár, hogy $\Und{f}_j + \alpha_j\Und{f}_k \in W$. Ugyanis $\Und{f}_j$ felírható $\Und{g}_1,\ldots,\Und{g}_m$ lin. kombinációjaként: $\Und{f}_j = \beta_1\Und{g}_1+\ldots+\beta_m\Und{g}_m$. Ekkor $\alpha_j = -\frac{\beta_m}{\lambda_m}$ megfelel a célnak. A bizonyítás további része megtalálható a hivatalos, Szeszlér-féle BSz1 jegyzet 23. oldalán, mivel az író megunta ennek a nagyon unalmas bizonyításnak a leírását.
 \end{leftbar}
-\end{document}

@@ -1,23 +1,5 @@
-\documentclass[]{article}
-\usepackage{lmodern}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{polyglossia}
-\usepackage{listings}
-\usepackage{tcolorbox}
-\usepackage{etoolbox}
-\usepackage{setspace}
-\usepackage{framed}
-\usepackage[a4paper,margin=2cm,footskip=.5cm]{geometry}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\Rn}[1]{$\mathbb{R}^{#1}$}
-\newcommand{\Und}[1]{\underline{#1}}
-\definecolor{shadecolor}{gray}{0.9}
-%opening
-\title{Bevezetés a Számításelméletbe 1.\\{\large 1. tétel}}
-\author{Hegyi Zsolt}
-\begin{document}
-\maketitle{}
+\section{1. tétel}
+
 \begin{framed}
 TÉRVEKTOR TULAJDONSÁGOK Tétel: Legyenek \underline{u} = ($u_1, u_2, u_3$) $\in$ \Rn{3} és \underline{v} = ($v_1, v_2, v_3$) $\in$ \Rn{3} térvektorok és $\lambda \in \R$. Ekkor\\
 $$\underline{u} + \underline{v} = (u_1 + v_1, u_2 + v_2, u_3 + v_3)$$
@@ -81,4 +63,4 @@ $$V = |\Und{u}\, \Und{v}\, \Und{v}|$$
 \begin{leftbar}
 Biz: A térfogatot a paralelogramma T területének és m magasságának a szorzatából kapjuk meg. T terület egyenlő az $|\Und{u}\times\Und{v}|$-vel, m magasságot pedig úgy kapjuk meg, hogy meghatározunk egy OMW háromszöget, melyben O az origó, M a W-ből az $\Und{u}\times\Und{v}$-re állított merőleges talppontja és W pedig \Und{w} végpontja. Pitagorasz -> $OM = m = |\Und{w}| \cdot \cos\phi$. Tehát összvissz
 \end{leftbar}
-\end{document}
+
