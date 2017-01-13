@@ -1,0 +1,27 @@
+sudo: required
+dist: trusty
+addons:
+  apt:
+    packages:
+    - texlive-xetex
+    - texlive-latex-extra
+    - lmodern
+    - texlive-latex-recommended
+    - xzdec
+    - texlive-fonts-recommended
+script:
+- tlmgr init-usertree
+- tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final
+- tlmgr update --all
+- tlmgr install etoolbox tcolorbox framed polyglossia hyperref pgf xcolor
+- xelatex bsz1.tex
+- xelatex bsz1.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: O03CET+2jdkQAvoG2SBdWnCAdD+Vhn9poiNw/y5JTMKHbfqTJeYHtyTUYkwrrh0P0xJ5LhNeuYQRgV7bi9gObW4aoFrDP/VERtZpJPq96FQxxBHduxganaILnQJDaAEmGIAtmM0B6DvNPTohsUj/JcvjwpPC994cxBgnR87cQcE5UHuai7sSaTdZuzkwdKeBpiMfkzRAulOkL/2EkXT6yTeQYzpfqbur1OAmeLsEee+l0MBPQm9e3eDCOyd5G+UfqYBF5/zyzO5kFCJzmSMDGrMKiHLl9Fw4AXI/zCUGIXP1iytOsJ7H0GkBm67vBmNCYQOgdg8e7lLaffvU/Ow657xoJBAwQFDto17c6xEKhmbIZ9ZYyCrDlff514JwcHltUpT6lnaZLpF9bbod6GH8RWVLD7ulPkwFXrrZy7fWKnKMS032rXWQxlW4Q6h8GLm2qTXx+HKRcmJ683GtloD5CoxdGaV6tCJ02ZoFBbgvdTBXm+wtsThtWuBbjJkALYHIHWVDYIQTxYmZxYYFKVACIVNVLOtuPGrHT2OHqPNh6MQJXFYU659VIIRuNg1HOx6sTu0HX8EeujbUpbz0fCZhvnUSBIiuN5njEX4+JvRAFczTI6g0A5NDeSDripg7jA2TwJBxzRNxcPiEW7+5cPnv/rrsyJNMk1IR31a2o14CNxA=
+  file: bsz1.pdf
+  skip-cleanup: true
+  overwrite: true
+  on:
+    repo: bme-notes/bsz1
