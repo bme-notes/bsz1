@@ -1,38 +1,38 @@
 \section{15. tétel}
 
-\begin{shaded}
-EULER-FÉLE $\varphi$-FÜGGVÉNY Definíció: Ha $n \geq 2$ egész, akkor az $1,\ldots,n-1$ számok között n-hez relatív prímek számát $\varphi(n)$-el jelöljük. Az $n\mapsto\varphi(n)$ függvényt Euler-féle $\varphi$ függvénynek nevezzük.
-\end{shaded}
-\begin{framed}
-EULER-FÉLE $\varphi$-FÜGGVÉNYRE KÉPLET Tétel: Legyen az $n > 1$ egész kanonikus alakja $n = p_1^{\alpha_1} \cdot \ldots \cdot p_k^{\alpha_k}$ Ekkor $$\varphi(n) = \left(p_1^{\alpha_1} - p_1^{\alpha_1-1}\right) \cdot \left(p_2^{\alpha_2} - p_2^{\alpha_2-1}\right) \cdot \ldots \cdot
+\begin{definicio}{
+EULER-FÉLE $\varphi$-FÜGGVÉNY Definíció}: Ha $n \geq 2$ egész, akkor az $1,\ldots,n-1$ számok között n-hez relatív prímek számát $\varphi(n)$-el jelöljük. Az $n\mapsto\varphi(n)$ függvényt Euler-féle $\varphi$ függvénynek nevezzük.
+\end{definicio}
+\begin{tetel}{
+EULER-FÉLE $\varphi$-FÜGGVÉNYRE KÉPLET Tétel}: Legyen az $n > 1$ egész kanonikus alakja $n = p_1^{\alpha_1} \cdot \ldots \cdot p_k^{\alpha_k}$ Ekkor $$\varphi(n) = \left(p_1^{\alpha_1} - p_1^{\alpha_1-1}\right) \cdot \left(p_2^{\alpha_2} - p_2^{\alpha_2-1}\right) \cdot \ldots \cdot
 \left(p_k^{\alpha_k} - p_k^{\alpha_k-1}\right)$$
-\end{framed}
+\end{tetel}
 \begin{leftbar}
 Biz: 130-131. oldal Szeszlér-jegyzet.
 \end{leftbar}
-\begin{shaded}
-REDUKÁLT MARADÉKRENDSZER Definíció: Az $R = \{c_1, \ldots, c_k\}$ számhalmaz redukált maradékrendszer modulo m, ha a következő feltételeknek eleget tesz:
+\begin{definicio}{
+REDUKÁLT MARADÉKRENDSZER Definíció}: Az $R = \{c_1, \ldots, c_k\}$ számhalmaz redukált maradékrendszer modulo m, ha a következő feltételeknek eleget tesz:
 \begin{itemize}
 \item ($c_i, m$) = 1 minden i = 1, $\ldots$, k esetén;
 \item $c_i \not \equiv c_j$ (mod m) bármely $i \neq j, 1 \leq i, j \leq k$ esetén;
 \item $k = \varphi(m).$
 \end{itemize}
-\end{shaded}
-\begin{framed}
-REDUKÁLT MARADÉKRENDSZER Tétel: Legyen $R = \{c_1, \ldots, c_k\}$ redukált maradékrendszer modulo m és legyen tetszőleges egész, melyre (a,m) = 1. Ekkor az $R' = \{a\cdot c_1, \ldots, a \cdot c_k\}$ halmaz szintén redukált maradékrendszer modulo m.
-\end{framed}
+\end{definicio}
+\begin{tetel}{
+REDUKÁLT MARADÉKRENDSZER Tétel}: Legyen $R = \{c_1, \ldots, c_k\}$ redukált maradékrendszer modulo m és legyen tetszőleges egész, melyre (a,m) = 1. Ekkor az $R' = \{a\cdot c_1, \ldots, a \cdot c_k\}$ halmaz szintén redukált maradékrendszer modulo m.
+\end{tetel}
 \begin{leftbar}
 Biz: 132. oldal Szeszlér-jegyzet.
 \end{leftbar}
-\begin{framed}
-EULER-FERMAT Tétel: Ha az a és m $\geq$ 2 egészekre (a,m) = 1, akkor $a^{\varphi(m)} \equiv 1$ (mod m).
-\end{framed}
+\begin{tetel}{
+EULER-FERMAT Tétel}: Ha az a és m $\geq$ 2 egészekre (a,m) = 1, akkor $a^{\varphi(m)} \equiv 1$ (mod m).
+\end{tetel}
 \begin{leftbar}
 Biz: 132-133. oldal Szeszlér-jegyzet.
 \end{leftbar}
-\begin{framed}
-"KIS" FERMAT-Tétel: Ha p prím és a tetszőleges egész, akkor $a^p \equiv a$ (mod p).
-\end{framed}
+\begin{tetel}{
+"KIS" FERMAT-Tétel}: Ha p prím és a tetszőleges egész, akkor $a^p \equiv a$ (mod p).
+\end{tetel}
 \begin{leftbar}
 Biz: 133. oldal Szeszlér-jegyzet.
 \end{leftbar}

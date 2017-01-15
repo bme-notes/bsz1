@@ -1,29 +1,29 @@
 \section{12. tétel}
 
-\begin{shaded}
-DIAGONÁLIS MÁTRIX Definíció: Az A ($n \times n$)-es mátrix akkor nevezzük diagonális mátrixnak, ha minden $i \neq j$ esetén $a_{i,j} = 0$ teljesül.
-\end{shaded}
-\begin{framed}
-KAPCSOLAT SAJÁTÉRTÉK ÉS LINEÁRIS LEKÉPEZÉSEK KÖZT Valami:
+\begin{definicio}{
+DIAGONÁLIS MÁTRIX Definíció}: Az A ($n \times n$)-es mátrix akkor nevezzük diagonális mátrixnak, ha minden $i \neq j$ esetén $a_{i,j} = 0$ teljesül.
+\end{definicio}
+\begin{tetel}{
+KAPCSOLAT SAJÁTÉRTÉK ÉS LINEÁRIS LEKÉPEZÉSEK KÖZT Valami}:
 Legyen $B = \{\Und{b}_1, \ldots, \Und{b}_n\}$ tetszőleges bázis és t.f.h. az $[f]_B$ mátrix diagonális, a főátlóban álló elemeket jelölje sorban $\lambda_1, \ldots, \lambda_n$. Ekkor az $[f]_B$ i-edik oszlopa $\lambda_i\cdot\Und{e}_i$-vel egyenlő, ebből kifolyólag $[f(\Und{b}_i)]_B = \lambda_i \cdot \Und{e}_i$. Ez viszont azt jelenti, hogy $f(b_i) = 0\cdot\Und{b}_1 + \ldots + \lambda_i \cdot \Und{b}_i + \ldots + 0 \cdot\Und{b}_n$, vagyis $f(b_i) = \lambda_i \cdot \Und{b}_i$.\\
 ÖSSZEFOGLALVA: $[f]_B$ akkor lesz diagonális, ha B minden tagjára $f(b_i) = \lambda_i \cdot \Und{b}_i$ teljesül valamilyen $\lambda$ skalárral.
-\end{framed}
-\begin{shaded}
-SAJÁTÉRTÉK, SAJÁTVEKTOR Definíció: Legyen A egy ($n \times n$)-es mátrix.
+\end{tetel}
+\begin{definicio}{
+SAJÁTÉRTÉK, SAJÁTVEKTOR Definíció}: Legyen A egy ($n \times n$)-es mátrix.
 \begin{itemize}
 \item A sajátértékének nevezzük a $\lambda \in \R$ skalárt, ha létezik olyan $\Und{x} \in \R^n,\: \Und{x} \neq \Und{0}$ vektor, melyre $A \cdot \Und{x} = \lambda\cdot \Und{x}$
 \item A sajátvektorának nevezzük az $\Und{x} \in \R^n$ vektort, ha $\Und{x} \neq \Und{0}$ és létezik olyan $\lambda \in \R$ skalár, melyre $A \cdot \Und{x} = \lambda\cdot \Und{x}$
 \end{itemize}
 Rövidítve: Ha $A\cdot\Und{x} = \lambda\cdot\Und{x}$ teljesül és $\Und{x} \neq \Und{0}$, akkor $\lambda$ a sajátértéke és $\Und{x}$ a sajátvektora az A-nak.
-\end{shaded}
-\begin{framed}
-SAJÁTÉRTÉK MEGHATÁROZÁSA Tétel: A négyzetes A mátrixnak a $\lambda \in \R$ skalár akkor és csak akkor sajátértéke, ha $det(A - \lambda\cdot E) = 0$.
-\end{framed}
+\end{definicio}
+\begin{tetel}{
+SAJÁTÉRTÉK MEGHATÁROZÁSA Tétel}: A négyzetes A mátrixnak a $\lambda \in \R$ skalár akkor és csak akkor sajátértéke, ha $det(A - \lambda\cdot E) = 0$.
+\end{tetel}
 \begin{leftbar}
 Biz: 106. oldal Szeszlér-jegyzet.
 \end{leftbar}
-\begin{shaded}
-KARAKTERISZTIKUS POLINOM Definíció: Az ($n \times n$)-es A mátrix karakterisztikus polinomjának nevezzük a $det(A - \lambda\cdot E)$ determináns értékét, ahol $\lambda$ változó.\\
+\begin{definicio}{
+KARAKTERISZTIKUS POLINOM Definíció}: Az ($n \times n$)-es A mátrix karakterisztikus polinomjának nevezzük a $det(A - \lambda\cdot E)$ determináns értékét, ahol $\lambda$ változó.\\
 Jelölés: $k_A(\lambda)$.
-\end{shaded}
+\end{definicio}
 A sajátérték definíciója átfogalmazva az előző tétel és definíció felhasználásával: A mátrix sajátértékei a $k_A(\lambda)$ karakterisztikus polinom gyökei, tehát a $k_A(\lambda) = 0$ egyenlet megoldásai. Az algebra egyik tétele szerint tehát n-edfokú polinomnak legfeljebb n gyöke lehet, amiből következik, hogy ($n \times n$)-es mátrixnak legfeljebb n sajátértéke van.

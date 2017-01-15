@@ -1,13 +1,13 @@
 \section{14. tétel}
 
-\begin{framed}
-LINEÁRIS KONGRUENCIÁK MEGOLDHATÓSÁGA Tétel: Az $a \cdot x \equiv b$ (mod m) lineáris kongruencia akkor és csak akkor megoldható, ha $(a,m)|b$. Ha pedig ez a feltétel teljesül, akkor  $a \cdot x \equiv b$ (mod m) megoldásainak a száma modulo m (a,m)-val egyenlő.
-\end{framed}
+\begin{tetel}{
+LINEÁRIS KONGRUENCIÁK MEGOLDHATÓSÁGA Tétel}: Az $a \cdot x \equiv b$ (mod m) lineáris kongruencia akkor és csak akkor megoldható, ha $(a,m)|b$. Ha pedig ez a feltétel teljesül, akkor  $a \cdot x \equiv b$ (mod m) megoldásainak a száma modulo m (a,m)-val egyenlő.
+\end{tetel}
 \begin{leftbar}
 Biz: 124. oldal Szeszlér-jegyzet.
 \end{leftbar}
-\begin{framed}
-EUKLIDESZI ALGORITMUS: Bemenet: a és m (0 < a < m) | Kimenet: (a,m).
+\begin{tetel}{
+EUKLIDESZI ALGORITMUS}: Bemenet: a és m (0 < a < m) | Kimenet: (a,m).
 \begin{description}
 \item[1. lépés:]m-et maradékosan osztjuk a-val, megkapva a maradékot, felírjuk őket a következő módon:
 $$a = b\cdot q_1 + r_1$$
@@ -18,16 +18,16 @@ $$b = r_1\cdot q_2 + r_2$$
 $$r_{i-2} = r{i-1} + r_i$$
 \item[Utolsó lépés] Akkor érünk el ide, ha $r_i = 0$, ekkor $r_{i-1}$ lesz a legnagyobb közös osztó.
 \end{description}
-\end{framed}
-\begin{framed}
-EUKLIDESZI ALGORITMUS Tétel: Az Euklideszi algoritmus végrehajtása után $r_k = (a,m)$.
-\end{framed}
+\end{tetel}
+\begin{tetel}{
+EUKLIDESZI ALGORITMUS Tétel}: Az Euklideszi algoritmus végrehajtása után $r_k = (a,m)$.
+\end{tetel}
 \begin{leftbar}
 Biz: 142. oldal Szeszlér-jegyzet.
 \end{leftbar}
-\begin{framed}
-EUKLIDESZI ALGORITMUS LÉPÉSSZÁMA Tétel: Az Euklideszi algoritmus polinomiális időben lefut és legfeljebb $2 \cdot [\log_2a]$ maradékos osztás után megáll.
-\end{framed}
+\begin{tetel}{
+EUKLIDESZI ALGORITMUS LÉPÉSSZÁMA Tétel}: Az Euklideszi algoritmus polinomiális időben lefut és legfeljebb $2 \cdot [\log_2a]$ maradékos osztás után megáll.
+\end{tetel}
 \begin{leftbar}
 Biz: 142. oldal Szeszlér-jegyzet.
 \end{leftbar}

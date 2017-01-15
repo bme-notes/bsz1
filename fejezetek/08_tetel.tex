@@ -1,52 +1,52 @@
 \section{8. tétel}
 
-\begin{shaded}
-INVERZ MÁTRIX Definíció: Egy ($n \times n$)-es A mátrix inverzének nevezzük az ($n \times n$)-es X mátrixot, ha $A \cdot X = E = X \cdot A$ teljesül.\\
+\begin{definicio}{
+INVERZ MÁTRIX Definíció}: Egy ($n \times n$)-es A mátrix inverzének nevezzük az ($n \times n$)-es X mátrixot, ha $A \cdot X = E = X \cdot A$ teljesül.\\
 Jelölés: $X = A^{-1}$.
-\end{shaded}
-\begin{framed}
-INVERZ LÉTEZÉSE Tétel: Az ($n \times n$)-es A mátrixnak akkor és csak akkor létezik inverze, ha $detA \neq 0$. Ha $A^{-1}$ létezik, akkor az egyértelmű.
-\end{framed}
+\end{definicio}
+\begin{tetel}{
+INVERZ LÉTEZÉSE Tétel}: Az ($n \times n$)-es A mátrixnak akkor és csak akkor létezik inverze, ha $detA \neq 0$. Ha $A^{-1}$ létezik, akkor az egyértelmű.
+\end{tetel}
 \begin{leftbar}
 Biz: T.f.h. $X = A^{-1}$ létezik: megmutatjuk, hogy $detA \neq 0$. Def. szerint $A \cdot X = E$ egyenlet mindkét oldalának determinánását véve: $det(A \cdot X) = detE$, ahol $detE = 1$, alkalmazzuk szorzástételt: $detA \cdot detX = 1$, ebből adódik, hogy $detA \neq 0$.
 \end{leftbar}
-\begin{framed}
-INVERZ MÁTRIX LÉTEZÉSE Lemma: Ha $A \in$ \Rn{n \times n} és $detA \neq 0$, akkor egyértelműen létezik $X \in$ \Rn{n \times n} mátrix, hogy $A \cdot X = E$.
-\end{framed}
+\begin{tetel}{
+INVERZ MÁTRIX LÉTEZÉSE Lemma}: Ha $A \in$ \Rn{n \times n} és $detA \neq 0$, akkor egyértelműen létezik $X \in$ \Rn{n \times n} mátrix, hogy $A \cdot X = E$.
+\end{tetel}
 \begin{leftbar}
 Biz: Fenti szorzás ekvivalens, mátrixszorzás szerint a következővel: $A \cdot \Und{x}_1 = \Und{e}_1, \ldots, A \cdot \Und{x}_n = \Und{e}_n$. Az $A\cdot \Und{x}_i = \Und{e}_i$ lin. egyenletrendszer, ami úgy jelölhető, hogy ($A|\Und{e}_i$). Mivel $detA \neq 0$, ezért ez az egyenletrendszer egyértelműen megoldható. Beláttuk a lemmát: a keresett X i-edik oszlopa a $A\cdot \Und{x}_i = \Und{e}_i$ rendszer egyértelmű megoldása minden $1 \leq i \leq n$ esetén.
 \end{leftbar}
 Az inverz kiszámítása: Egymás mellé felírjuk az ($n \times n$)-es A mátrixot valamint az ($n \times n$)-es egységmátrixot. Gauss-eliminációt lefuttatjuk az A-n, úgy, hogy a sorekvivalens lépéseket megismételjük az E-n is. Addig folytatjuk a Gauss-eliminációt, amíg az A redukált lépcsős alakban nem lesz. Ekkor az $E' = A^{-1}$.
-\begin{shaded}
-NÉGYZETES RÉSZMÁTRIX Definíció: Legyen A ($k \times n$)-es mátrix és $r \leq k,n$ egész. Válasszuk ki tetszőlegesen A sorai és oszlopai közül r-r darabot. Ekkor a kiválasztott sorok és oszlopok kereszteződéseiben kialakuló ($r \times r$)-es mátrixot A egy négyzetes részmátrixának nevezzük.
-\end{shaded}
-\begin{shaded}
-RANG Definíció: Legyen A tetszőleges mátrix. Azt mondjuk, hogy
+\begin{definicio}{
+NÉGYZETES RÉSZMÁTRIX Definíció}: Legyen A ($k \times n$)-es mátrix és $r \leq k,n$ egész. Válasszuk ki tetszőlegesen A sorai és oszlopai közül r-r darabot. Ekkor a kiválasztott sorok és oszlopok kereszteződéseiben kialakuló ($r \times r$)-es mátrixot A egy négyzetes részmátrixának nevezzük.
+\end{definicio}
+\begin{definicio}{
+RANG Definíció}: Legyen A tetszőleges mátrix. Azt mondjuk, hogy
 \begin{itemize}
 \item A oszloprangja r, ha A oszlopai közül kiválasztható r db. úgy, hogy a kiválasztott oszlopok lin.flen.-ek, de r+1 már nem választható ki így;
 \item A sorrangja r, ha A sorai közül kiválaszható r db. úgy, hogy a kiválasztott sorok lin.flen.-ek, de r+1 már nem válaszható ki így;
 \item A determinánsrangja r, ha A-nak van nemnulla determinánsú ($r \times r$)-es részmátrixa, de ($r+1 \times r+1$)-es nemnulla determinánsú már nincs.
 \end{itemize}
-\end{shaded}
-\begin{framed}
-RANGFOGALMAK EGYENLŐSÉGE Tétel: Minden A mátrixra $o(A) = s(A) = d(A)$.
-\end{framed}
+\end{definicio}
+\begin{tetel}{
+RANGFOGALMAK EGYENLŐSÉGE Tétel}: Minden A mátrixra $o(A) = s(A) = d(A)$.
+\end{tetel}
 \begin{leftbar}
 Biz: Elég belátni, hogy $o(A) = d(A)$ igaz minden A mátrixra, mivel $A^T$ oszlopai megegyeznek A soraival, ezért $s(A) = o(A^T)$, valamint $d(A) = d(A^T)$, mivel az $A^T$-ből választható négyzetes részmátrixok az A-ból választhatók transzponáltjai, és a legnagyobb nemnulla determinánsú is ugyanazon méretű. Ha az $o(A) = d(A)$ állítást minden mátrixra, így $A^T$-ra is igaznak fektltekezzük, akkor összesítve az $s(A) = o(A^T) = d(A^T) = d(A) = o(aA)$ egyenlőségeket kapjuk. Tehát azt kell bizonyítanunk csak, hogy $o(A) = d(A)$. Először megmutatjuk, hogy $o(A) \geq d(A)$, majd hogy $o(A) \leq d(A)$. Ezekről a Szeszlér-jegyzet 83-85. oldalán többet olvashat.
 \end{leftbar}
-\begin{shaded}
-RANG Definíció: Az A mátrix rangjának nevezzük az $o(A),\: s(A),\: d(A)$ közös értékét.\\
+\begin{definicio}{
+RANG Definíció}: Az A mátrix rangjának nevezzük az $o(A),\: s(A),\: d(A)$ közös értékét.\\
 Jelölés: r(A).
-\end{shaded}
-\begin{framed}
-RANG KISZÁMOLÁSA Tétel: Legyen A ($k \times n$)-es mátrix és az oszlopai legyenek $\Und{a}_1, \ldots, \Und{a}_n$, ekkor $r(A) = dim\langle\Und{a}_1, \ldots, \Und{a}_n\rangle$
-\end{framed}
+\end{definicio}
+\begin{tetel}{
+RANG KISZÁMOLÁSA Tétel}: Legyen A ($k \times n$)-es mátrix és az oszlopai legyenek $\Und{a}_1, \ldots, \Und{a}_n$, ekkor $r(A) = dim\langle\Und{a}_1, \ldots, \Und{a}_n\rangle$
+\end{tetel}
 \begin{leftbar}
 Biz: Válasszuk ki A oszlopai közül a legtöbbet őgy, hogy ezek lin.flen.-ek legyenek. Oszloprang def. szerint ekkor $r = r(A)$. Állítjuk, hogy $\Und{a}_1, \ldots, \Und{a}_n$ bázist alkot a W = $dim\langle\Und{a}_1, \ldots, \Und{a}_n\rangle$ altérben. Be kell látnunk tehát, hogy $\Und{a}_1, \ldots, \Und{a}_n$ gen.rszr. W-ben. Legyen U = $\langle\Und{a}_1, \ldots, \Und{a}_r\rangle$, célunk belátni, hogy U = W. $r < i \leq n$ esetén $\Und{a}_1, \ldots, \Und{a}_r, \Und{a}_i$ lin.öf, mivel A-ból r+1 lin.flen. oszlopot nem lehet kiválasztani. Az újonnan érkező vektor lemmája szerint ekkor $\Und{a}_i\in\langle\Und{a}_1, \ldots, \Und{a}_r\rangle = U$, tehát $\Und{a}_1, \ldots, \Und{a}_n$ mind U-beli, és mivel U altér, ezért minden W-beli, tehát $\Und{a}_1, \ldots, \Und{a}_n$ vektorokból lin. kombinációval kifejezhető vektor is U-beli kell, hogy legyen. Ezzel $W \subseteq U$ bizonyítottuk, és a tételt is.
 \end{leftbar}
-\begin{framed}
-RANG KISZÁMOLÁSA Tétel: Az elemi sorekvivalens lépések a mátrix rangját nem változtatják meg. A lépcsős alakú mátrix sorainak a száma egyenló a mátrix rangjával.
-\end{framed}
+\begin{tetel}{
+RANG KISZÁMOLÁSA Tétel}: Az elemi sorekvivalens lépések a mátrix rangját nem változtatják meg. A lépcsős alakú mátrix sorainak a száma egyenló a mátrix rangjával.
+\end{tetel}
 \begin{leftbar}
 Biz: majd
 \end{leftbar}

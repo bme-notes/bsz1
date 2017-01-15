@@ -1,8 +1,8 @@
 \section{7. tétel}
 
-\begin{framed}
-Legyen (A|\Und{b}) egy n változós, n egyenletből álló lin. egyenletrendszer kibővített együtthatómátrixa. Ekkor az egyenletrendszer akkor és csak akkor egyértelműen megoldható, ha detA $\neq 0$
-\end{framed}
+\begin{tetel}{
+Legyen (A|\Und{b}) egy n változós, n egyenletből álló lin}. egyenletrendszer kibővített együtthatómátrixa. Ekkor az egyenletrendszer akkor és csak akkor egyértelműen megoldható, ha detA $\neq 0$
+\end{tetel}
 \begin{leftbar}
 Futtassuk (A|b)-re Gauss-eliminációt. Az algoritmus által megtett sorekvivalens lépések az együtthatómátrix determinánsát megváltoztatják ugyan, de annak nulla/nemnulla mivoltán nem változtatnak. A Gauss-elimináció az alábbi három lehetőség valamelyikével ér véget:\\
 \begin{itemize}
@@ -12,12 +12,12 @@ Kevesebb sor, mint oszlop (és fordítva) -- mivel A eredetileg ($n \times n$)-e
 \item Az egyenletrendszer megoldása egyértelmű: A redukált lépcsős alak determinánsa 1, főátlóban csupa 1-es, mindenhol máshol 0 áll. Mivel det végül nem nulla, ezért eredetileg is detA $\neq 0$.
 \end{itemize}
 \end{leftbar}
-\begin{framed}
-Tétel: Legyenek $\Und{a}_1, \ldots, \Und{a}_n, \Und{b} \in$ \Rn{k} vektorok és legyen A az $\Und{a}_i$-k egyesítésével keletkező ($k \times n$)-es mátrix. Ekkor az alábbi állítások ekvaliensek:\\
+\begin{tetel}{
+Tétel}: Legyenek $\Und{a}_1, \ldots, \Und{a}_n, \Und{b} \in$ \Rn{k} vektorok és legyen A az $\Und{a}_i$-k egyesítésével keletkező ($k \times n$)-es mátrix. Ekkor az alábbi állítások ekvaliensek:\\
 Megoldható az $A \cdot \Und{x} = \Und{b}$ "mátrixegyenlet"\\
 Megoldható az (A|\Und{b}) kibővített együtthatómátrixú lineáris egyenletrendszer.\\
 $\Und{b} \in \langle \Und{a}_1, \ldots \Und{a}_n \rangle$
-\end{framed}
+\end{tetel}
 \begin{leftbar}
 Biz: A 2. és a 3. állítás ekvivalens. A 3. állítás teljesülése azt jelenti, hogy létezik a $\lambda_1\Und{a}_1 + \ldots + \lambda_n\Und{a}_n = \Und{b}$ lineáris kombináció. Itt a $\lambda_1\Und{a}_1 + \ldots + \lambda_n\Und{a}_n = \Und{b}$ vektor i-edik koordinátája minden $1 \leq i \leq k$ esetén $\lambda_1\Und{a}_{i,1} + \ldots + \lambda_n\Und{a}_{i, n} = \Und{b}_i$. Következtetésképp azt kapjuk, hogy a felső és alsó egyenlet ekvaliens, és ezzel épp az (A|\Und{b}) lineáris egyenletrendszert kapjuk.\\
 1. és 2. ekvivalenciájához azt kell észrevennünk, hogy \Und{x} csak \Rn{n}-beli oszlopvektor lehet (mert egyrészt n sora van, ha $A \cdot \Und{x}$, másrészt 1 oszlopa van, ha $A \cdot \Und{x}$ 1 oszlopú). Az \Und{x} j-edik koordinátáját minden $1 \leq j \leq n$ esetén $x_j$-vel jelölve az $A \cdot \Und{x}$ szorzat i-edik koordinátája a mátrixszorzás definíciója szerint $a_{i,1}x_1+\ldots+a_{i,n}x_n$. Ezért $A \cdot \Und{x} = \Und{b}$ azzal ekvivalens, hogy $a_{i,1}x_1+\ldots+a_{i,n}x_n = b_i$ teljesül minden $1 \leq i \leq k$ esetén - vagyis ismét az (A|\Und{b}) lineáris egyenletrendszert kaptuk.
@@ -27,12 +27,12 @@ Az $\Und{a}_1,\ldots,\Und{a}_n$ vektorok lineárisan függetlenek.
 \begin{leftbar}
 Biz: $\Und{a}_1,\ldots,\Und{a}_n$ akkor és csak akkor lin.flen., ha $\lambda_1\Und{a}_1,\ldots,\lambda_n\Und{a}_n = \Und{0}$ csak a triviális lin. kombináció esetén, vagyis $\lambda_1 = \ldots = \lambda_n = 0$. Ez ekvaliens azzal, hogy az $A \cdot \Und{x} = \Und{0}$ lineáris egyenletnek egyetlen megoldása az, hogy minden változó értéke 0.
 \end{leftbar}
-\begin{framed}
-Tétel: Legyen A ($n \times n$)-es mátrix. Ekkor az alábbi állítások ekvivalensek:\\
+\begin{tetel}{
+Tétel}: Legyen A ($n \times n$)-es mátrix. Ekkor az alábbi állítások ekvivalensek:\\
 A oszlopai, mint \Rn{n}-beli vektorok lineárisan függetlenek;\\
 detA $\neq$ 0;\\
 A sorai, mint n hosszú sorvektorok lineárisan függetlenek.
-\end{framed}
+\end{tetel}
 \begin{leftbar}
 Biz: 1. állítás az előző következmény miatt azzal ekvivalens, hogy az (A|\Und{0}) kibővített együtthatómátrixú lin. egyenletrendszer egyértelműen megoldható. Mivel A négyzetes mátrix, ezért 1. tétel szerint ez akkor és csak akkor teljesül, ha detA $\neq 0$. Bizonyítottuk, hogy 1. és 2. állítás ekvivalens.\\
 2. és 3. állítás közötti ekvivalenciához A transzponáltjára alkalmazzuk az 1. és 2. közötti, már bizonyított ekvivalenciát. Ezt megtehetjük, mivel $A^T$ oszlopai megegyeznek A soraival, és fordítva, ezért A sorai akkor és csak akkor lin.flen.-ek, ha det$A^T \neq 0$. Azonban transzponált-determináns tétel miatt detA = det$A^T$, ezért ez valóban ekvivalens detA $\neq 0$ feltétellel.
