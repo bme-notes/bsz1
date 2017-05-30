@@ -1,13 +1,15 @@
 \section{14. tétel}
 
-\begin{tetel}{
-LINEÁRIS KONGRUENCIÁK MEGOLDHATÓSÁGA Tétel}: Az $a \cdot x \equiv b$ (mod m) lineáris kongruencia akkor és csak akkor megoldható, ha $(a,m)|b$. Ha pedig ez a feltétel teljesül, akkor  $a \cdot x \equiv b$ (mod m) megoldásainak a száma modulo m (a,m)-val egyenlő.
+\begin{tetel}{LINEÁRIS KONGRUENCIÁK MEGOLDHATÓSÁGA}
+Az $a \cdot x \equiv b$ (mod m) lineáris kongruencia akkor és csak akkor megoldható, ha $(a,m)|b$. Ha pedig ez a feltétel teljesül, akkor  $a \cdot x \equiv b$ (mod m) megoldásainak a száma modulo m (a,m)-val egyenlő.
 \end{tetel}
-\begin{leftbar}
-Biz: 124. oldal Szeszlér-jegyzet.
-\end{leftbar}
-\begin{tetel}{
-EUKLIDESZI ALGORITMUS}: Bemenet: a és m (0 < a < m) | Kimenet: (a,m).
+
+\begin{bizonyitas}{}
+124. oldal Szeszlér-jegyzet.
+\end{bizonyitas}
+
+\begin{tetel}{EUKLIDESZI ALGORITMUS}
+Bemenet: a és m (0 < a < m) | Kimenet: (a,m).
 \begin{description}
 \item[1. lépés:]m-et maradékosan osztjuk a-val, megkapva a maradékot, felírjuk őket a következő módon:
 $$a = b\cdot q_1 + r_1$$
@@ -19,16 +21,21 @@ $$r_{i-2} = r{i-1} + r_i$$
 \item[Utolsó lépés] Akkor érünk el ide, ha $r_i = 0$, ekkor $r_{i-1}$ lesz a legnagyobb közös osztó.
 \end{description}
 \end{tetel}
-\begin{tetel}{
-EUKLIDESZI ALGORITMUS Tétel}: Az Euklideszi algoritmus végrehajtása után $r_k = (a,m)$.
+
+\begin{tetel}{EUKLIDESZI ALGORITMUS}
+Az Euklideszi algoritmus végrehajtása után $r_k = (a,m)$.
 \end{tetel}
-\begin{leftbar}
-Biz: 142. oldal Szeszlér-jegyzet.
-\end{leftbar}
-\begin{tetel}{
-EUKLIDESZI ALGORITMUS LÉPÉSSZÁMA Tétel}: Az Euklideszi algoritmus polinomiális időben lefut és legfeljebb $2 \cdot [\log_2a]$ maradékos osztás után megáll.
+
+\begin{bizonyitas}{}
+142. oldal Szeszlér-jegyzet.
+\end{bizonyitas}
+
+\begin{tetel}{EUKLIDESZI ALGORITMUS LÉPÉSSZÁMA}
+Az Euklideszi algoritmus polinomiális időben lefut és legfeljebb $2 \cdot [\log_2a]$ maradékos osztás után megáll.
 \end{tetel}
-\begin{leftbar}
-Biz: 142. oldal Szeszlér-jegyzet.
-\end{leftbar}
+
+\begin{bizonyitas}{}
+142. oldal Szeszlér-jegyzet.
+\end{bizonyitas}
+
 A tételhez hozzá tartozik az Euklidesz algoritmus alkalmazása lineáris kongruenciák megoldásához, konkrét példán.

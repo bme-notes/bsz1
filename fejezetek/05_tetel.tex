@@ -1,7 +1,7 @@
 \section{5. tétel}
 
-\begin{definicio}{
-DETERMINÁNS Definíció}: Legyen adott egy ($n \times n$)-es A mátrix. Az A minden bástyaelhelyezésére
+\begin{definicio}{DETERMINÁNS}
+Legyen adott egy ($n \times n$)-es A mátrix. Az A minden bástyaelhelyezésére
 szorozzuk össze az azt alkotó n elemet, majd a szorzatot lássuk el előjellel
 a következő szabály szerint: ha a bástyaelhelyezésnek megfelelő permutáció inverziószáma
 páros, akkor az előjel legyen pozitív, ha viszont páratlan az inverziószám,
@@ -9,30 +9,35 @@ akkor az előjel legyen negatív. Az így kapott n! darab, n tényezős előjele
 összegét az A determinánsának nevezzük. \\
 Jelölés: |A| vagy detA.
 \end{definicio}
-\begin{tetel}{
-DETERMINÁNS ALAPTULAJDONSÁGAI Tétel}: Legyen A egy ($n \times n$)-es mátrix,\\
+
+\begin{tetel}{DETERMINÁNS ALAPTULAJDONSÁGAI}
+Legyen A egy ($n \times n$)-es mátrix,\\
 Ha A-nak van csupa 0 elemet tartalmazó sora vagy oszlopa, akkor detA $= 0$.\\
 Ha A felsőháromszög-mátrix vagy alsóháromszög-mátrix, akkor a determinánsa a főátlóbeli elemek szorzata: $$det A = a_{1,1}\cdot a_{2,2}\cdot \ldots\cdot a_{n,n}$$
 \end{tetel}
-\begin{leftbar}
-Biz: Az első állítás bizonyítása azonnal következik a determináns definíciójából: mivel mind az n! db. szorzat tartalmaz elemet abból a sorból/oszlopból, amelyiknek minden tagja 0, ezért minden szorzat értéke és ezek összege is 0 lesz.\\
+
+\begin{bizonyitas}{}
+Az első állítás bizonyítása azonnal következik a determináns definíciójából: mivel mind az n! db. szorzat tartalmaz elemet abból a sorból/oszlopból, amelyiknek minden tagja 0, ezért minden szorzat értéke és ezek összege is 0 lesz.\\
 A második állítás bizonyításához vegyük A felsőháromszög-mátrixot. A bástyaelhelyezések akkor nem tartalmaznak 0 elemet, ha az első oszlopból az első elemet, a második oszlopból a második elemet, választjuk ki (a többit nem válaszhatnánk ki) és így tovább... Az így kapott permutáció inverziószáma 0, így pozitív előjelű ez a tag, és mivel ez az egyetlen tag, amiben nem szerepel 0, ezért ez lesz az előjeles összeg eredménye. Ezt megismételve az oszlop és a sor szavak megcserélésével megkapjuk ugyanezt a bizonyítást az alsóháromszög-mátrixra is.
-\end{leftbar}
-\begin{tetel}{
-DETERMINÁNS ALAPTULAJDONSÁGAI Tétel}: Legyen A ($n\times n$)-es mátrix, $\lambda \in \R$ skalár, $1 \leq i,j\leq n, i \neq j$ egészek.\\
+\end{bizonyitas}
+
+\begin{tetel}{DETERMINÁNS ALAPTULAJDONSÁGAI}
+Legyen A ($n\times n$)-es mátrix, $\lambda \in \R$ skalár, $1 \leq i,j\leq n, i \neq j$ egészek.\\
 Ha A egy sorát/oszlopát megszorozzuk $\lambda$-val, akkor a kapott A' mátrix determinánsa $\lambda$-szorosa A-énak:$$detA' = \lambda\cdot detA$$
 Ha A két sorát/oszlopát felcseréljük, akkor a kapott A' mátrix determinánsa ellentetje az A-énak:
 $$detA' = (-1)\cdot detA$$
 Ha A i-edik sorát helyettesítjük sajátmagának és a j-edik sor $\lambda$-szorosának összegével, akkor a kapott A' mátrix determinánsa megegyezik A-éval:
 $$detA' = detA$$ Ugyanez igaz oszlopokra is.
 \end{tetel}
-\begin{leftbar}
+
+\begin{bizonyitas}{}
 Lásd 48-50. oldal Szeszlér-jegyzet.
-\end{leftbar}
-\begin{tetel}{
-DETERMINÁNS KISZÁMOLÁSA -  GAUSS ELIMINÁCIÓVAL\\
+\end{bizonyitas}
+
+\begin{tetel}{DETERMINÁNS KISZÁMOLÁSA -  GAUSS ELIMINÁCIÓVAL\\
 Bemenet - $n\times n$ mátrix}.\\
-\textbf{0. lépés}: i <- 1, D <- 1\\
+\textbf{0. lépés}
+i <- 1, D <- 1\\
 \textbf{1. lépés}:
 \begin{itemize}
 \item Ha $a_{i,j} = 0$, akkor folytassuk \textbf{2. lépésnél}.
@@ -54,9 +59,12 @@ Bemenet - $n\times n$ mátrix}.\\
 \item PRINT "detA = 0"; STOP.
 \end{itemize}
 \end{tetel}
-\begin{tetel}{
-TRANSZPONÁLT DETERMINÁNSA Tétel}: Minden A négyzetes mátrixra $detA^T = detA$
+
+\begin{tetel}{TRANSZPONÁLT DETERMINÁNSA}
+Minden A négyzetes mátrixra $detA^T = detA$
 \end{tetel}
-\begin{leftbar}
+
+\begin{bizonyitas}{}
 A bizonyítás megtalálható a Szeszlér-jegyzet 65-66. oldalán.
-\end{leftbar}
+\end{bizonyitas}
+

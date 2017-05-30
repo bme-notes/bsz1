@@ -1,28 +1,36 @@
 \section{6. tétel}
 
-\begin{tetel}{
-KIFEJTÉSI Tétel}: Ha az ($n \times n$)-es A mátrix valamelyik sorának, vagy oszlopának minden elemét megszorozzuk a hozzá tartozó előjeles aldetermináns értékével és a kapott n darab kéttényezős szorzatot összeadjuk, akkor az A determinánsának értékét kapjuk.
+\begin{tetel}{KIFEJTÉSI Tétel}
+Ha az ($n \times n$)-es A mátrix valamelyik sorának, vagy oszlopának minden elemét megszorozzuk a hozzá tartozó előjeles aldetermináns értékével és a kapott n darab kéttényezős szorzatot összeadjuk, akkor az A determinánsának értékét kapjuk.
 \end{tetel}
-\begin{leftbar}
-Biz: A Szeszlér-jegyzet 55-58. oldalán.
-\end{leftbar}
-\begin{definicio}{
-MÁTRIX Definíció}: Adott $k,n\geq1$ egészek esetén ($k\times n$)-es mátrixnak nevezünk egy k sorból és n oszlopból álló táblázatot, melynek minden cellájában egy valós szám áll. A ($k\times n$)-es mátrixok halmazát \Rn{k\times n} jelöli. Az A mátrix i-edik sorának és j-edik oszlopának kereszteződésében álló elemet $a_{i,j}$ jelöli. Az \Rn{k\times n}-en értelmezett, "+"-al jelölt összeadást és tetszőleges $\lambda \in \R$ esetén "$\cdot$"-tal jelölt skalárral való szorzást tudjuk értelmezni. Nem, nem fogom leírni, hogyan néz ki egy szorzás/összeadás $k \times n$-es mátrixon.
+
+\begin{bizonyitas}{}
+A Szeszlér-jegyzet 55-58. oldalán.
+\end{bizonyitas}
+
+\begin{definicio}{MÁTRIX}
+Adott $k,n\geq1$ egészek esetén ($k\times n$)-es mátrixnak nevezünk egy k sorból és n oszlopból álló táblázatot, melynek minden cellájában egy valós szám áll. A ($k\times n$)-es mátrixok halmazát \Rn{k\times n} jelöli. Az A mátrix i-edik sorának és j-edik oszlopának kereszteződésében álló elemet $a_{i,j}$ jelöli. Az \Rn{k\times n}-en értelmezett, "+"-al jelölt összeadást és tetszőleges $\lambda \in \R$ esetén "$\cdot$"-tal jelölt skalárral való szorzást tudjuk értelmezni. Nem, nem fogom leírni, hogyan néz ki egy szorzás/összeadás $k \times n$-es mátrixon.
 \end{definicio}
-\begin{tetel}{
-MÁTRIXMŰVELETEK Tétel}: Legyen A,B,C $\in$ \Rn{k\times n} és $\lambda, \mu \in \R$. Ekkor igazak az alábbiak:\\
+
+\begin{tetel}{MÁTRIXMŰVELETEK}
+Legyen A,B,C $\in$ \Rn{k\times n} és $\lambda, \mu \in \R$. Ekkor igazak az alábbiak:\\
 A mátrixösszeadás asszociatív és kommutatív.\\
 A mátrixszorzás asszociatív és disztributív. (NEM KOMMUTATÍV)!
 \end{tetel}
-\begin{definicio}{
-TRANSZPONÁLT Definíció}: A ($k\times n$)-es A mátrix transzponáltjának nevezzük az ($n\times k$)-as B mátrixot, ha $b_{i,j} = a_{j_i}$ teljesül minden $1 \leq i \leq n$ és $1 \leq j \leq k$ esetén.\\
+
+\begin{definicio}{TRANSZPONÁLT}
+A ($k\times n$)-es A mátrix transzponáltjának nevezzük az ($n\times k$)-as B mátrixot, ha $b_{i,j} = a_{j_i}$ teljesül minden $1 \leq i \leq n$ és $1 \leq j \leq k$ esetén.\\
 Jelölés: $B = A^T$
 \end{definicio}
-\begin{definicio}{
-MÁTRIXSZORZÁS Definíció}: A ($k\times n$)-es A ($n\times m$)-es B mátrixok szorzatának nevezzük és $A\cdot B$-vel jelöljük azt a ($k\times m$)-es C mátrixot, melyre minden $1 \leq i \leq k$ és $1 \leq j \leq m$ esetén
+
+\begin{definicio}{MÁTRIXSZORZÁS}
+A ($k\times n$)-es A ($n\times m$)-es B mátrixok szorzatának nevezzük és $A\cdot B$-vel jelöljük azt a ($k\times m$)-es C mátrixot, melyre minden $1 \leq i \leq k$ és $1 \leq j \leq m$ esetén
 $$c_{i,j} = a_{i,1}\cdot b_{1, j}+\ldots+a_{i,n}\cdot b_{n,j}$$
 \end{definicio}
+
 Ha az A és B mátrixokra $A \cdot B$ szorzat létezik, akkor $B^T \cdot A^T$ is létezik és $(A\cdot B)^T = B^T \cdot A^T$.
-\begin{tetel}{
-DETERMINÁNSOK SZORZÁSTÉTELE Tétel}: Bármely A és B ($n\times n$)-es mátrixokra: $$det(A\cdot B)=detA \cdot detB$$
+
+\begin{tetel}{DETERMINÁNSOK SZORZÁSTÉTELE}
+Bármely A és B ($n\times n$)-es mátrixokra: $$det(A\cdot B)=detA \cdot detB$$
 \end{tetel}
+

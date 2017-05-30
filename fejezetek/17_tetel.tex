@@ -1,40 +1,49 @@
 \section{17. tétel}
 
-\begin{definicio}{
-NEM KELL - SEGÉDDEFINÍCIÓK}: Legyenek A és B tetszőleges halmazok és $f$ : A $\to$ B egy függvény. Az $f$ függvényt
+\begin{definicio}{NEM KELL - SEGÉDDEFINÍCIÓK}
+Legyenek A és B tetszőleges halmazok és $f$ : A $\to$ B egy függvény. Az $f$ függvényt
 \begin{itemize}
 \item injektívnek nevezzük, ha bármely $x_1, x_2 \in A, x_1 \neq x_2$ esetén $f(x_1) \neq f(x_2)$.
 \item szürjektívnek nevezzük, ha bármely $y \in B$ esetén létezik olyan $x \in A$, melyre $f(x) = y$.
 \item bijektívnek nevezzük, ha injektív és szürjektív.
 \end{itemize}
 \end{definicio}
-\begin{definicio}{
-HALMAZOK SZÁMOSSÁGÁNAK EGYENLŐSÉGE Definíció}: Azt mondjuk, hogy a (tetszőleges) A és B halmazok számossága egyenlő, ha létezik egy $f$ : A $\to$ B bijekció.\\
+
+\begin{definicio}{HALMAZOK SZÁMOSSÁGÁNAK EGYENLŐSÉGE}
+Azt mondjuk, hogy a (tetszőleges) A és B halmazok számossága egyenlő, ha létezik egy $f$ : A $\to$ B bijekció.\\
 Jelölés: |A| = |B|
 \end{definicio}
-\begin{definicio}{
-$\mathbb{N}$ SZÁMOSSÁGA}: Az A halmazt megszámlálhatóan végtelennek nevezzük, ha a számossága egyenlő a természetes számok halmazáéval (tehát |A| = |$\mathbb{N}$|).\\
+
+\begin{definicio}{$\mathbb{N}$ SZÁMOSSÁGA}
+Az A halmazt megszámlálhatóan végtelennek nevezzük, ha a számossága egyenlő a természetes számok halmazáéval (tehát |A| = |$\mathbb{N}$|).\\
 Jelölés: |A| = $\aleph_0$
 \end{definicio}
-\begin{tetel}{
-$\mathbb{Q}$, $\mathbb{Z}$ SZÁMOSSÁGA Tétel}: Az egész számok $\mathbb{Z}$ halmaza és a racionális számok $\mathbb{Q}$ halmaza egyaránt megszámlálhatóan végtelen.
+
+\begin{tetel}{$\mathbb{Q}$, $\mathbb{Z}$ SZÁMOSSÁGA}
+Az egész számok $\mathbb{Z}$ halmaza és a racionális számok $\mathbb{Q}$ halmaza egyaránt megszámlálhatóan végtelen.
 \end{tetel}
-\begin{leftbar}
-Biz: 161. oldal Szeszlér-jegyzet
-\end{leftbar}
-\begin{tetel}{
-CANTOR Tétel}: A valós számok $\mathbb{R}$ halmaza nem megszámlálhatóan végtelen, vagyis $$|\mathbb{N}| \neq |\mathbb{R}|$$
+
+\begin{bizonyitas}{}
+161. oldal Szeszlér-jegyzet
+\end{bizonyitas}
+
+\begin{tetel}{CANTOR}
+A valós számok $\mathbb{R}$ halmaza nem megszámlálhatóan végtelen, vagyis $$|\mathbb{N}| \neq |\mathbb{R}|$$
 \end{tetel}
-\begin{leftbar}
-Biz: 162-164. oldal Szeszlér-jegyzet.
-\end{leftbar}
-\begin{definicio}{
-$\mathbb{R}$ SZÁMOSSÁGA Definíció}: Az A halmazt kontinuum számosságúnak nevezzük, ha a számossága egyenlő a valós számok halmazáéval (vagyis |A| = |$\mathbb{R}$|).\\
+
+\begin{bizonyitas}{}
+162-164. oldal Szeszlér-jegyzet.
+\end{bizonyitas}
+
+\begin{definicio}{$\mathbb{R}$ SZÁMOSSÁGA}
+Az A halmazt kontinuum számosságúnak nevezzük, ha a számossága egyenlő a valós számok halmazáéval (vagyis |A| = |$\mathbb{R}$|).\\
 Jelölés: |A| = c.
 \end{definicio}
+
 A (0,1) nyílt intervallum is kontinuum számosságú. Ld. 163. oldal Szeszlér-jegyzet.
-\begin{definicio}{
-Legyenek A és B (tetszőleges) halmazok}.
+
+\begin{definicio}{}
+Legyenek A és B (tetszőleges) halmazok.
 \begin{itemize}
 \item Azt mondjuk, hogy A számossága kisebb vagy egyenlő B számoságánál, ha létezik $f\::\:A \to B$ injektív függvény.\\
 Jelölés: $|A| \leq |B|$
@@ -42,28 +51,37 @@ Jelölés: $|A| \leq |B|$
 Jelölés: $|A| < |B|$
 \end{itemize}
 \end{definicio}
-\begin{tetel}{
-CANTOR-BERNSTEIN Tétel}: Az A és B halmazokra |A| = |B| akkor és csak akkor igaz, ha $|A| \leq |B|$ és $|B| \leq |A|$
+
+\begin{tetel}{CANTOR-BERNSTEIN}
+Az A és B halmazokra |A| = |B| akkor és csak akkor igaz, ha $|A| \leq |B|$ és $|B| \leq |A|$
 \end{tetel}
-\begin{tetel}{
-$\mathbb{Q}$ SZÁMOSSÁGA Tétel}: $|\mathbb{Q}| = |\mathbb{N}|$
+
+\begin{tetel}{$\mathbb{Q}$ SZÁMOSSÁGA}
+$|\mathbb{Q}| = |\mathbb{N}|$
 \end{tetel}
-\begin{leftbar}
-Biz: 167. oldal Szeszlér-jegyzet.
-\end{leftbar}
-\begin{definicio}{
-HATVÁNYHALMAZ Definíció}: Tetszőleges A halmaz hatványhalmazának nevezzük az A összes részhalmaza által alkotott halmazt.\\
+
+\begin{bizonyitas}{}
+167. oldal Szeszlér-jegyzet.
+\end{bizonyitas}
+
+\begin{definicio}{HATVÁNYHALMAZ}
+Tetszőleges A halmaz hatványhalmazának nevezzük az A összes részhalmaza által alkotott halmazt.\\
 Jelölés: P(A)
 \end{definicio}
-\begin{tetel}{
-(ismét?) CANTOR-Tétel}: Minden A halmazra |A| < |P(A)|.
+
+\begin{tetel}{(ismét?) CANTOR-Tétel}
+Minden A halmazra |A| < |P(A)|.
 \end{tetel}
-\begin{leftbar}
-Biz: 169. oldal Szeszlér-jegyzet.
-\end{leftbar}
-\begin{tetel}{
-$\mathbb{N}$ HATVÁNYHALMAZÁNAK SZÁMOSSÁGA Tétel}: |P($\mathbb{N}$)| = |$\mathbb{R}$|
+
+\begin{bizonyitas}{}
+169. oldal Szeszlér-jegyzet.
+\end{bizonyitas}
+
+\begin{tetel}{$\mathbb{N}$ HATVÁNYHALMAZÁNAK SZÁMOSSÁGA}
+|P($\mathbb{N}$)| = |$\mathbb{R}$|
 \end{tetel}
-\begin{leftbar}
-Biz: 170-171. oldal Szeszlér-jegyzet.
-\end{leftbar}
+
+\begin{bizonyitas}{}
+170-171. oldal Szeszlér-jegyzet.
+\end{bizonyitas}
+

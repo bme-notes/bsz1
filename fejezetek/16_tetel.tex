@@ -1,12 +1,13 @@
 \section{16. tétel}
 
-\begin{definicio}{
-POLINOMIÁLIS FUTÁSIDEJŰ ALGORITMUS}: Definíció: (vázlatos) A algoritmust polinomiális futásidejűnek tekintjük, ha n méretű bemenethez tartozó $f$(n) függvényre, mely az algoritmus lépésszámát határozza meg, a következő MINDEN n esetén fennáll:
+\begin{definicio}{POLINOMIÁLIS FUTÁSIDEJŰ ALGORITMUS}
+Definíció: (vázlatos) A algoritmust polinomiális futásidejűnek tekintjük, ha n méretű bemenethez tartozó $f$(n) függvényre, mely az algoritmus lépésszámát határozza meg, a következő MINDEN n esetén fennáll:
 $$f(n) \leq c\cdot n^k$$ ahol c és k rögzített konstansok.
 \end{definicio}
+
 A Szeszlér-jegyzet 137-141. oldalán található egy hosszas mese a számelméleti algoritmusokról, ezek közül az ALAPMŰVELETEK és a HATVÁNYOZÁS, valamint HATVÁNYOZÁS MODULO M a fontosak.
-\begin{tetel}{
-PRÍMTESZTELÉS Fermat-teszt}:
+
+\begin{tetel}{PRÍMTESZTELÉS Fermat-teszt}
 \begin{description}
 \item[Bemenet]m egész
 \item[0. lépés]k $\leftarrow$ 1
@@ -17,14 +18,18 @@ PRÍMTESZTELÉS Fermat-teszt}:
 \item[5. lépés]k $\leftarrow$ k+1, vissza \textbf{1. lépés}hez
 \end{description}
 \end{tetel}
-\begin{tetel}{
-FERMAT-TESZT ÁRULÓK SZÁMA Tétel}: Ha m > 1 összetett szám és m-nek van árulója, akkor az 1 és m közötti, m-hez relatív prím számoknak legalább a fele áruló.
+
+\begin{tetel}{FERMAT-TESZT ÁRULÓK SZÁMA}
+Ha m > 1 összetett szám és m-nek van árulója, akkor az 1 és m közötti, m-hez relatív prím számoknak legalább a fele áruló.
 \end{tetel}
-\begin{leftbar}
-Biz: 147. oldal Szeszlér-jegyzet.
-\end{leftbar}
-\begin{definicio}{
-Az m > 1 összetett számot univerzális álprímnek, vagy más néven Carmichael-számnak nevezzük, ha nincsen árulója, vagyis, ha minden 1 < a < m, (a,m) = 1 esetén $a^{m-1} \equiv 1$ (mod m)}.
+
+\begin{bizonyitas}{}
+147. oldal Szeszlér-jegyzet.
+\end{bizonyitas}
+
+\begin{definicio}{}
+Az m > 1 összetett számot univerzális álprímnek, vagy más néven Carmichael-számnak nevezzük, ha nincsen árulója, vagyis, ha minden 1 < a < m, (a,m) = 1 esetén $a^{m-1} \equiv 1$ (mod m).
 \end{definicio}
+
 Nyilvános kulcsú titkosítás és az RSA-algoritmus:\\
 152-154. oldal Szeszlér-jegyzet.

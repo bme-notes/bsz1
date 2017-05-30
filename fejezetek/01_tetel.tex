@@ -1,66 +1,80 @@
 \section{1. tétel}
 
-\begin{tetel}{
-TÉRVEKTOR TULAJDONSÁGOK Tétel}: Legyenek \underline{u} = ($u_1, u_2, u_3$) $\in$ \Rn{3} és \underline{v} = ($v_1, v_2, v_3$) $\in$ \Rn{3} térvektorok és $\lambda \in \R$. Ekkor\\
+\begin{tetel}{TÉRVEKTOR TULAJDONSÁGOK}
+Legyenek \underline{u} = ($u_1, u_2, u_3$) $\in$ \Rn{3} és \underline{v} = ($v_1, v_2, v_3$) $\in$ \Rn{3} térvektorok és $\lambda \in \R$. Ekkor\\
 $$\underline{u} + \underline{v} = (u_1 + v_1, u_2 + v_2, u_3 + v_3)$$
 $$\underline{u} - \underline{v} = (u_1 - v_1, u_2 - v_2, u_3 - v_3)$$
 $$\lambda \underline{u} = (\lambda u_1,\lambda u_2, \lambda u_3)$$
 \end{tetel}
-\begin{definicio}{
-SKALÁRIS SZORZAT Definíció}: \underline{u} és \underline{v} skaláris szorzatán az alábbit értjük:
+
+\begin{definicio}{SKALÁRIS SZORZAT}
+\underline{u} és \underline{v} skaláris szorzatán az alábbit értjük:
 $$\underline{u}\cdot\underline{v} = |u|\cdot|v|\cdot\cos\phi$$
 Ha $\phi = k\cdot90^{\circ}\quad k\in\mathbb{Z}$, akkor a szorzatösszeg 0.
 \end{definicio}
-\begin{tetel}{
-SKALÁRIS SZORZAT Tétel}: Egy alternatív meghatározása a skaláris szorzatnak: \\Legyenek \underline{u} = $(u_1, u_2, u_3)\in$ \Rn{3} és \underline{v} = $(v_1, v_2, v_3)\in$ \Rn{3} térvektorok. Ekkor $$\underline{u}\cdot\underline{v} = u_1 v_1 + u_2 v_2 + u_3 v_3$$
+
+\begin{tetel}{SKALÁRIS SZORZAT}
+Egy alternatív meghatározása a skaláris szorzatnak: \\Legyenek \underline{u} = $(u_1, u_2, u_3)\in$ \Rn{3} és \underline{v} = $(v_1, v_2, v_3)\in$ \Rn{3} térvektorok. Ekkor $$\underline{u}\cdot\underline{v} = u_1 v_1 + u_2 v_2 + u_3 v_3$$
 \end{tetel}
-\begin{tetel}{
-EGYENES Az \textit{e} egyenes paraméteres egyenletrendszere (1}. tétel miatt):
+
+\begin{tetel}{EGYENES}
+Az \textit{e} egyenes paraméteres egyenletrendszere (1. tétel miatt)
 $$x = x_0 + \lambda \cdot a$$
 $$y = y_0 + \lambda \cdot b$$
 $$z = z_0 + \lambda \cdot c$$
 $$\lambda \in \R$$
 \end{tetel}
+
 Ahol $P_0 (x_0,y_0,z_0)$ ponton átmegy a vonal és $\underline{v} = (\textit{a,b,c})  (\underline{v} \neq \underline{0})$ irányvektora.
 Nem paraméteres alakban ugyanez:
-\begin{tetel}{
-EGYENES Tétel}: Legyen az \textit{e} egyenesnek $P_0 (x_0,y_0,z_0)$ pontja és $\underline{v} = (\textit{a,b,c})  (\underline{v} \neq \underline{0})$ irányvektora. Ekkor tetszőleges pontjának NEM paraméteres alakja:
+
+\begin{tetel}{EGYENES}
+Legyen az \textit{e} egyenesnek $P_0 (x_0,y_0,z_0)$ pontja és $\underline{v} = (\textit{a,b,c})  (\underline{v} \neq \underline{0})$ irányvektora. Ekkor tetszőleges pontjának NEM paraméteres alakja:
 $$\frac{x-x_0}{a} = \frac{y-y_0}{b} = \frac{z-z_0}{c}\quad a, b, c \neq 0$$
 $$\frac{x-x_0}{a} = \frac{y-y_0}{b} \:\acute{e}s\: z = z_0 \quad c = 0$$
 $$x = x_0\quad y = y_0\quad a,b = 0$$
 \end{tetel}
-\begin{leftbar}
-Biz: P $\in$ \textit{e} akkor igaz, ha \textit{e} param.egy.rszr-ére $\lambda \in \R$ értékre P-t adja. Ha $a,b,c \neq 0$, akkor a három egyenletből egy közös $\lambda$-ra kell jutnunk. Ha $c=0$, akkor megfelelő $\lambda$ létezése azt jelenti, hogy $z=z_0$ és az első két egyenletből közös $\lambda$ értéket kell kapnunk. Végül ha csak $c\neq0$, akkor az első két egyenlet egyértelmű míg a harmadik egyenlet mindig kielégíthető a $\lambda = \frac{z-z_0}{c}$ választással.
-\end{leftbar}
-\begin{tetel}{
-SÍK Tétel}: Legyen adott az S síknak $P_0(x_0,y_0,z_0)$ és $\underline{n} = (a,b,c)\quad n\neq \underline{0}$ normálvektora. Ekkor \textit{P(x,y,z)}\\ P $\in$ S akkor igaz, ha
+
+\begin{bizonyitas}{}
+P $\in$ \textit{e} akkor igaz, ha \textit{e} param.egy.rszr-ére $\lambda \in \R$ értékre P-t adja. Ha $a,b,c \neq 0$, akkor a három egyenletből egy közös $\lambda$-ra kell jutnunk. Ha $c=0$, akkor megfelelő $\lambda$ létezése azt jelenti, hogy $z=z_0$ és az első két egyenletből közös $\lambda$ értéket kell kapnunk. Végül ha csak $c\neq0$, akkor az első két egyenlet egyértelmű míg a harmadik egyenlet mindig kielégíthető a $\lambda = \frac{z-z_0}{c}$ választással.
+\end{bizonyitas}
+
+\begin{tetel}{SÍK}
+Legyen adott az S síknak $P_0(x_0,y_0,z_0)$ és $\underline{n} = (a,b,c)\quad n\neq \underline{0}$ normálvektora. Ekkor \textit{P(x,y,z)}\\ P $\in$ S akkor igaz, ha
 $$ax+by+cz=ax_0+by_0+cz_0$$
 \end{tetel}
-\begin{leftbar}
-Biz: $P \in S$ akkor igaz, ha $\vec{P_0P}$ || S-sel, $\vec{P_0P}$ pedig akkor || S-sel, ha merőleges \underline{n}-nel, ez akkor igaz, ha (skaláris szorzat def!) skaláris szorzatuk 0. Az skal. szorzat alternatív formáját véve és átrendezve megkapjuk az egyenletet.
-\end{leftbar}
-\begin{definicio}{
-VEKTORIÁLIS SZORZAT Definíció}: Az \underline{u} és \underline{v} vektorok vektoriális szorzata az az \underline{u}×\underline{v}-vel jelölt
+
+\begin{bizonyitas}{}
+$P \in S$ akkor igaz, ha $\vec{P_0P}$ || S-sel, $\vec{P_0P}$ pedig akkor || S-sel, ha merőleges \underline{n}-nel, ez akkor igaz, ha (skaláris szorzat def!) skaláris szorzatuk 0. Az skal. szorzat alternatív formáját véve és átrendezve megkapjuk az egyenletet.
+\end{bizonyitas}
+
+\begin{definicio}{VEKTORIÁLIS SZORZAT}
+Az \underline{u} és \underline{v} vektorok vektoriális szorzata az az \underline{u}×\underline{v}-vel jelölt
 vektor, amelyre az alábbi feltételek fennállnak:
 $$\underline{u} \times \underline{v}\: hossza:\: |u \times v| = |u| \cdot |v| \cdot\sin\phi$$
 $$\underline{u} \times \underline{v}\ \: mer\ddot{o}leges\: \underline{u}\: \acute{e}s\: \underline{v}-re$$
 Ezek jobbsodrású rendszert alkotnak. Ha valamelyik vektor \underline{0}, akkor az eredmény is nulla.
 \end{definicio}
-\begin{tetel}{
-VEKTORIÁLIS SZORZAT Tétel}: Legyenek \underline{u} = $(u_1,u_2,u_3)$ és \underline{v} = $(v_1,v_2,v_3)$ vektorok, ekkor:
+
+\begin{tetel}{VEKTORIÁLIS SZORZAT}
+Legyenek \underline{u} = $(u_1,u_2,u_3)$ és \underline{v} = $(v_1,v_2,v_3)$ vektorok, ekkor:
 $$\underline{u}\times\underline{v} = \left( \begin{vmatrix}
 u_2&u_3\\v_2&v_3\end{vmatrix},-\begin{vmatrix}
 u_1&u_3\\v_1&v_3\end{vmatrix},\begin{vmatrix}
 u_1&u_2\\v_1&v_2\end{vmatrix} \right)$$
 \end{tetel}
-\begin{definicio}{
-VEGYESSZORZAT Definíció}: Az \Und{u}, \Und{v}, \Und{w}  vektorok vegyesszorzata $(\Und{u}\times\Und{v})\cdot\Und{w}$.\\Jelölés: \Und{u} \Und{v} \Und{w}.
+
+\begin{definicio}{VEGYESSZORZAT}
+Az \Und{u}, \Und{v}, \Und{w}  vektorok vegyesszorzata $(\Und{u}\times\Und{v})\cdot\Und{w}$.\\Jelölés: \Und{u} \Und{v} \Und{w}.
 \end{definicio}
-\begin{tetel}{
-VEGYESSZORZAT Tétel}: A vegyesszorzat kapcsolata a térfogattal - az \Und{u}, \Und{v} és \Und{w} által kifeszített \textit{paralelepipedon} térfogata:
+
+\begin{tetel}{VEGYESSZORZAT}
+A vegyesszorzat kapcsolata a térfogattal - az \Und{u}, \Und{v} és \Und{w} által kifeszített \textit{paralelepipedon} térfogata:
 $$V = |\Und{u}\, \Und{v}\, \Und{v}|$$
 \end{tetel}
-\begin{leftbar}
-Biz: A térfogatot a paralelogramma T területének és m magasságának a szorzatából kapjuk meg. T terület egyenlő az $|\Und{u}\times\Und{v}|$-vel, m magasságot pedig úgy kapjuk meg, hogy meghatározunk egy OMW háromszöget, melyben O az origó, M a W-ből az $\Und{u}\times\Und{v}$-re állított merőleges talppontja és W pedig \Und{w} végpontja. Pitagorasz -> $OM = m = |\Und{w}| \cdot \cos\phi$. Tehát összvissz
-\end{leftbar}
+
+\begin{bizonyitas}{}
+A térfogatot a paralelogramma T területének és m magasságának a szorzatából kapjuk meg. T terület egyenlő az $|\Und{u}\times\Und{v}|$-vel, m magasságot pedig úgy kapjuk meg, hogy meghatározunk egy OMW háromszöget, melyben O az origó, M a W-ből az $\Und{u}\times\Und{v}$-re állított merőleges talppontja és W pedig \Und{w} végpontja. Pitagorasz -> $OM = m = |\Und{w}| \cdot \cos\phi$. Tehát összvissz
+\end{bizonyitas}
+
 

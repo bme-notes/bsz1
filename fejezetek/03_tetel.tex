@@ -1,23 +1,28 @@
 \section{3. tétel}
 
-\begin{definicio}{
-BÁZIS Definíció}: Legyen $V \leq$ \Rn{n} altér. A V-beli vektorokból álló $\Und{b}_1,\ldots,\Und{b}_k$ rendszert bázisnak nevezzük V-ben, ha a rendszer lin.flen. és gen.rszr. V-ben.
+\begin{definicio}{BÁZIS}
+Legyen $V \leq$ \Rn{n} altér. A V-beli vektorokból álló $\Und{b}_1,\ldots,\Und{b}_k$ rendszert bázisnak nevezzük V-ben, ha a rendszer lin.flen. és gen.rszr. V-ben.
 \end{definicio}
-\begin{tetel}{
-BÁZIS EGYÉRTELMŰSÉGE Tétel}: T.f.h. a $V \leq$ \Rn{n} altérben a $\Und{b}_1,\ldots,\Und{b}_k$ rendszer és a $\Und{c}_1,\ldots,\Und{c}_m$ rendszer egyaránt bázisok. Ekkor $k = m$.
+
+\begin{tetel}{BÁZIS EGYÉRTELMŰSÉGE}
+T.f.h. a $V \leq$ \Rn{n} altérben a $\Und{b}_1,\ldots,\Und{b}_k$ rendszer és a $\Und{c}_1,\ldots,\Und{c}_m$ rendszer egyaránt bázisok. Ekkor $k = m$.
 \end{tetel}
-\begin{leftbar}
-Biz: Mindkét rendszer bázis, ezért $\Und{b}_1,\ldots,\Und{b}_k$ lin.flen. és $\Und{c}_1,\ldots,\Und{c}_m$ gen.rszr. V-ben. F-G egyenlőtlenséget alkalmazva: $k \leq m$. Ennek a fordítottját is kimondhatjuk: $\Und{b}_1,\ldots,\Und{b}_k$ gen.rszr. V-ben és $\Und{c}_1,\ldots,\Und{c}_m$ lin.flen. Az F-G egyenlőtlenség alapján $m \leq k$. Mivel mindkét állítás egyszerre igaz, ezért $k = m$.
-\end{leftbar}
-\begin{definicio}{
-DIMENZIÓ Definíció}: Legyen $V \leq$ \Rn{n} altérben $\Und{b}_1,\ldots,\Und{b}_k$ rendszer bázis. Ekkor azt mondjuk, hogy a V dimenziója k.\\
+
+\begin{bizonyitas}{}
+Mindkét rendszer bázis, ezért $\Und{b}_1,\ldots,\Und{b}_k$ lin.flen. és $\Und{c}_1,\ldots,\Und{c}_m$ gen.rszr. V-ben. F-G egyenlőtlenséget alkalmazva: $k \leq m$. Ennek a fordítottját is kimondhatjuk: $\Und{b}_1,\ldots,\Und{b}_k$ gen.rszr. V-ben és $\Und{c}_1,\ldots,\Und{c}_m$ lin.flen. Az F-G egyenlőtlenség alapján $m \leq k$. Mivel mindkét állítás egyszerre igaz, ezért $k = m$.
+\end{bizonyitas}
+
+\begin{definicio}{DIMENZIÓ}
+Legyen $V \leq$ \Rn{n} altérben $\Und{b}_1,\ldots,\Und{b}_k$ rendszer bázis. Ekkor azt mondjuk, hogy a V dimenziója k.\\
 Jelölés: dim V = k.
 \end{definicio}
-\begin{definicio}{
-STANDARD BÁZIS \Rn{n}-BEN Definíció}: Jelölje minden $1 \leq i \leq n$ esetén $\Und{e}_i$ azt az \Rn{n}-beli vektort, amelynek (felülről) az i-edik koordinátája 1, az összes többi koordinátája 0. Ekkor $\Und{e}_1,\ldots,\Und{e}_n$ bázis az \Rn{n}-ben és ennek külön nevet is szentelünk - standard bázis.\\Jelölés: $E_n$.
+
+\begin{definicio}{STANDARD BÁZIS \Rn{n}-BEN}
+Jelölje minden $1 \leq i \leq n$ esetén $\Und{e}_i$ azt az \Rn{n}-beli vektort, amelynek (felülről) az i-edik koordinátája 1, az összes többi koordinátája 0. Ekkor $\Und{e}_1,\ldots,\Und{e}_n$ bázis az \Rn{n}-ben és ennek külön nevet is szentelünk - standard bázis.\\Jelölés: $E_n$.
 \end{definicio}
-\begin{leftbar}
-Biz: $\Und{e}_1,\ldots,\Und{e}_n$ lineáris kombinációja $\lambda_1,\ldots,\lambda_n$ skalárokkal:
+
+\begin{bizonyitas}{}
+$\Und{e}_1,\ldots,\Und{e}_n$ lineáris kombinációja $\lambda_1,\ldots,\lambda_n$ skalárokkal:
 $$\lambda_1\Und{e}_1+\ldots+\lambda_n\Und{e}_n = \lambda_1\begin{pmatrix}
 1\\0\\\vdots\\0
 \end{pmatrix}+\ldots+
@@ -27,34 +32,44 @@ $$\lambda_1\Und{e}_1+\ldots+\lambda_n\Und{e}_n = \lambda_1\begin{pmatrix}
 \lambda_1\\\lambda_2\\\vdots\\\lambda_n
 \end{pmatrix}$$
 Látszik, hogy $\Und{e}_1,\ldots,\Und{e}_n$ gen.rszr. \Rn{n}-ben, hiszen lin. kombinációjukként tetszőleges vektor előállhat. Ha a nullvektort akarjuk kifejezni, akkor csak a triviális lineáris kombináció esetén fog az előállni, tehát a rendszer lin.flen., és ezek alapján $\Und{e}_1,\ldots,\Und{e}_n$ tényleg bázist alkot az \Rn{n}-ben.
-\end{leftbar}
+\end{bizonyitas}
+
 A fenti állításból következik, hogy dim \Rn{n} = n, viszont figyeljünk arra, hogy \Rn{n} csak az egyike az "n-dimenziós tereknek" és minden ($n \leq m$) \Rn{m}-nek van n-dimenziós altere.
-\begin{tetel}{
-BÁZIS Tétel}: A V $\leq$ \Rn{n} altérben $\Und{b}_1,\ldots,\Und{b}_k$ vektorok akkor és csak akkor alkotnak bázist, ha minden $\Und{v} \in$ V egyértelműen, tehát pontosan egyféleképpen fejezhető ki lineáris kombinációjukként.
+
+\begin{tetel}{BÁZIS}
+A V $\leq$ \Rn{n} altérben $\Und{b}_1,\ldots,\Und{b}_k$ vektorok akkor és csak akkor alkotnak bázist, ha minden $\Und{v} \in$ V egyértelműen, tehát pontosan egyféleképpen fejezhető ki lineáris kombinációjukként.
 \end{tetel}
-\begin{leftbar}
-Biz: "csak akkor": akkor bázis, ha gen.rszr V-ben és lin.flen. Előbbi következik tételből, utóbbi pedig 2. tételsor alternatív lin.flen. def.-jéből.\\
+
+\begin{bizonyitas}{}
+"csak akkor": akkor bázis, ha gen.rszr V-ben és lin.flen. Előbbi következik tételből, utóbbi pedig 2. tételsor alternatív lin.flen. def.-jéből.\\
 "akkor": Minden $\Und{v} \in$ \Rn{n} kifejezhető $\Und{b}_1,\ldots,\Und{b}_k$ lin. kombinációjaként, INDIREKT t.f.h. valamely $\Und{v} \in$ V kétféleképpen kifejezhető:
 $$\Und{v} = \lambda_1\Und{b}_1 + \ldots + \lambda_k\Und{b}_k = \mu_1\Und{b}_1 + \ldots + \mu_k\Und{b}_k\quad \acute{e}s\quad \lambda_j \neq \mu_j$$A kettő különbségét véve:
 $$\Und{0} = (\lambda_1 - \mu_1)\Und{b}_1 +\ldots +  (\lambda_k - \mu_k)\Und{b}_k$$
 Azt kaptuk tehát, hogy a \Und{0} kifejezhető a $\Und{b}_1,\ldots,\Und{b}_k$ nemtriviális lin. kombinációjából, hiszen $(\lambda_j - \mu_j) \neq 0$, ez ellentmondás, tehát ezt az irányt is bizonyítottuk.
-\end{leftbar}
-\begin{definicio}{
-KOORDINÁTAVEKTOR Definíció}: Legyen V $\leq$ \Rn{n}, B = \{$\Und{b}_1,\ldots,\Und{b}_k$\} bázis V-ben és \Und{v} $\in$ V tetszőleges vektor. Azt mondjuk, hogy a $\Und{k} = \begin{pmatrix}
+\end{bizonyitas}
+
+\begin{definicio}{KOORDINÁTAVEKTOR}
+Legyen V $\leq$ \Rn{n}, B = \{$\Und{b}_1,\ldots,\Und{b}_k$\} bázis V-ben és \Und{v} $\in$ V tetszőleges vektor. Azt mondjuk, hogy a $\Und{k} = \begin{pmatrix}
 \lambda_1\\
 \vdots\\
 \lambda_k
 \end{pmatrix}\in$ \Rn{k} vektor a \Und{v} vektor B szerinti koordinátavektora, ha $\Und{v} = \lambda_1\Und{b}_1 + \ldots + \lambda_k\Und{b}_k$.\\
 Jelölés: $\Und{k} = [\Und{v}]_B$
 \end{definicio}
+
 Fontos még, hogy $[\Und{v}]_B$ nem csak \Und{v}-től függ: ugyanannak a vektornak más-más bázis esetén más-más koordinátavektorok felelnek meg.
-\begin{tetel}{
-BÁZIS LÉTEZÉSE Tétel}: Legyen V $\leq$ \Rn{n} altér, $f_1, \ldots, f_k$ V-beli vektorokból álló lineárisan független rendszer. Ekkor $f_1, \ldots, f_k$ kiegészíthető véges sok további vektorral úgy, hogy a kapott rendszer bázis legyen.
+
+\begin{tetel}{BÁZIS LÉTEZÉSE}
+Legyen V $\leq$ \Rn{n} altér, $f_1, \ldots, f_k$ V-beli vektorokból álló lineárisan független rendszer. Ekkor $f_1, \ldots, f_k$ kiegészíthető véges sok további vektorral úgy, hogy a kapott rendszer bázis legyen.
 \end{tetel}
-\begin{leftbar}
-Biz: Leqyen W = $\langle f_1, \ldots, f_k \rangle$. Nyilván igaz, hogy W $\subseteq$ V, mivel V altér. Ha V = W, akkor $f_1, \ldots, f_k$ gen.rszr. és így bázis V-ben, tehát a tételt beláttuk. Ha W $\neq$ V, akkor létezik egy \Und{v} $\in$ V, \Und{v} $\notin$ W vektor. Újonnan érkező vektor lemmája szerint ekkor $f_1, \ldots, f_k, \Und{v}$ lin.flen. Ha ez már gen.rszr. V-ben, akkor a tételt beláttuk, ellenkező esetben ismételjük meg a lépéseket. Be kell még látnunk, hogy ez a folyamat egy idő után leáll, ekkor az F-G egyenlőtlenséget vesszük igénybe, ez alapján n-nél nagyobb elemszámú lin.flen rendszer nem létezhet \Rn{n}-ben, és létezik n elemű gen.rszr. is ebben a térben. Tehát az eljárás $n-k$ lépés után biztosan leáll.
-\end{leftbar}
+
+\begin{bizonyitas}{}
+Leqyen W = $\langle f_1, \ldots, f_k \rangle$. Nyilván igaz, hogy W $\subseteq$ V, mivel V altér. Ha V = W, akkor $f_1, \ldots, f_k$ gen.rszr. és így bázis V-ben, tehát a tételt beláttuk. Ha W $\neq$ V, akkor létezik egy \Und{v} $\in$ V, \Und{v} $\notin$ W vektor. Újonnan érkező vektor lemmája szerint ekkor $f_1, \ldots, f_k, \Und{v}$ lin.flen. Ha ez már gen.rszr. V-ben, akkor a tételt beláttuk, ellenkező esetben ismételjük meg a lépéseket. Be kell még látnunk, hogy ez a folyamat egy idő után leáll, ekkor az F-G egyenlőtlenséget vesszük igénybe, ez alapján n-nél nagyobb elemszámú lin.flen rendszer nem létezhet \Rn{n}-ben, és létezik n elemű gen.rszr. is ebben a térben. Tehát az eljárás $n-k$ lépés után biztosan leáll.
+\end{bizonyitas}
+
 Ebből következik, hogy minden V $\leq$ \Rn{n} altérben van bázis -- tehát dim V is létezik.
-\begin{leftbar}
+
+\begin{bizonyitas}{}
 Ha V = ${\Und{0}}$, akkor az üres halmaz bázis V-ben, viszont ha V tartalma egy $\Und{v} \neq \Und{0}$ vektort, akkor \Und{v}-re alkalmazva fenti tételt kapunk egy V-beli bázist.
-\end{leftbar}
+\end{bizonyitas}
+
